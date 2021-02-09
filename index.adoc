@@ -13,8 +13,15 @@ include::header.adoc[]
 == Announcements
 * Welcome! First lecture is on Friday, February 12, at 11:10am.
 * There is *no lab* on February 12th.
-* link:asst00.html[Assignment 0] is due February 19th at midnight.
+* link:asst00.html[Assignment 0] is due in two parts on February 18th and February 19th at midnight.
 * link:develEnvSetup.html[Instructions for setting up Java]
+
+== **Schedule**
+
+The syllabus may change during the semester. Please check here every week for updates 
+on lecture content, worksheets, and assignments.
+
+include::schedule.adoc[]
 
 == Course Info
 
@@ -45,7 +52,7 @@ and debug computer programs as well as learn solve problems like a computer scie
 |===
 | Activity | Location | Time
 
-| Lecture | Zoom | Tuesday, Friday, 11:10am-12:30pm EST
+| Lecture | Zoom (Link posted on Slack) | Tuesday, Friday, 11:10am-12:30pm EST
 | Lab A | Zoom | Tuesday, 12:40pm-2pm EST
 | Lab B | Zoom | Friday, 10:10am-11:00am EST
 | Office Hours | By appointment | See calend.ly link on Slack
@@ -76,12 +83,6 @@ All TA office hours will be on Zoom. See our course slack for details!
 *  **Slack** Please go to link:https://slack.com/signin[slack.com]. Our workspace is BrynMawr-CS110-F20. You can ask questions and request one-on-one help over zoom using this course's slack channel. 
 *  **Development environment** This refers to the tools we will use to write and run code. We will distribute an installer to help you set this up. We will use git bash, OpenJDK-11, and Visual Studio Code (VS Code).
 
-== **Schedule**
-
-The syllabus may change during the semester. Please check here every week for updates 
-on lecture content, worksheets, and assignments.
-
-include::schedule.adoc[]
 
 == Grading Policies
 
