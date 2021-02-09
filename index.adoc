@@ -11,10 +11,10 @@ include::header.adoc[]
 
 [.anns]
 == Announcements
-[unstyled]
 * Welcome! First lecture is on Friday, February 12, at 11:10am.
-* There is no lab on February 12th.
+* There is *no lab* on February 12th.
 * link:asst00.html[Assignment 0] is due February 19th at midnight.
+* link:develEnvSetup.html[Instructions for setting up Java]
 
 == Course Info
 
