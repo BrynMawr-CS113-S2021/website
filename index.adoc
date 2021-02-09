@@ -93,9 +93,9 @@ as a weighted average of all grades according to the following weights:
 |===
 | 20% | Final Exam
 | 15% | Midterm
-| 30% | Assignments
+| 35% | Assignments
 | 15% | Code jams
-| 20% | Presentations
+| 15% | Presentations
 |===
 
 //include::quizzes.adoc[]
