@@ -11,6 +11,7 @@
 | Feb 12 
 | *Course introduction, Hello World* anchor:hello[]
 
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=855d19c6-5af9-452b-8e57-accd0140dea6[Lecture 2/12/2021]
 * Algorithms, command line interface (CLI), compilation, input and output
 * Read: Sedgewick and Wayne, Sec 1.1
 * Read: link:develEnvSetup.html[Setting up your development environment]

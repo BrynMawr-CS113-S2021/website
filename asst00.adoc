@@ -31,7 +31,10 @@ assignments, exams, and exercises.
 
 Create a dropbox account and send an e-mail to the instructor (anormoyle at
 brynmawr.edu) with the e-mail used for dropbox account. You will then get an
-invite to share a folder for all your submissions. 
+invite to share a folder for the course. 
+
+WARNING: Dropbox has an option to automatically backup your computer but the free account only gives you 2GB of space. 
+Do not choose this option when you install Dropbox. Otherwise, your dropbox can fill up immediately. 
 
 = Course setup
 
@@ -96,4 +99,6 @@ A journey of a thousand miles begins with a single step.
 
 == How to hand-in
 
-. Copy your program, `fortune.java`, to your dropbox, into the folder called `A0`
+. Copy your program, `Fortune.java`, to your dropbox, into the folder called `A0`. The 
+instructor will create the folder `A0` for you once you notify her with your Dropbox 
+email address.
