@@ -65,13 +65,13 @@ All TA office hours will be on Zoom. See our course slack for details!
 
 [.center,options="header,autowidth"]
 |===
-| Day | Early | 6-8pm | 7-9pm | 8-10pm 
+| Day | Morning | 6-8pm | 7-9pm | 8-10pm 
 
-| Sun | | | | 
-| Mon | | | |
-| Tues | | | | 
-| Weds | | | | 
-| Thurs | | | | 
+| Sun | | | | Yuxiao 
+| Mon | | | Al |
+| Tues | |Angie | Sarah | 
+| Weds | Angie (9-11am) | | Sarah | 
+| Thurs | | | Al | Yuxiao
 | Fri | | | |
 
 |===
