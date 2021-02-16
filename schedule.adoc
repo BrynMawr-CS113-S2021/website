@@ -11,19 +11,21 @@
 | Feb 12 
 | *Course introduction, Hello World* anchor:hello[]
 
-* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=855d19c6-5af9-452b-8e57-accd0140dea6[Lecture 2/12/2021]
-* Algorithms, command line interface (CLI), compilation, input and output
+* Algorithms, command line interface (CLI), compilation and running
 * Read: Sedgewick and Wayne, Sec 1.1
 * Read: link:develEnvSetup.html[Setting up your development environment]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=855d19c6-5af9-452b-8e57-accd0140dea6[Lecture 2/12/2021]
 
 //-----------------------------
 | 1 
 | Feb 16,19 
 | *Variables and data types* anchor:variables[]
 
+* Terminal, directories/files, Input and output, Basic data types (int,double,String), Variables 
 * Read: Sedgewick and Wayne, Sec 1.2 (Skip `booleans`)
 * link:asst00.html[Assignment 0]: *Due Feb 19*
 * Lab: Office Hours
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b17cbd4b-26bf-4d87-9de5-acd10143f4bc[Lecture 2/16/2021],link:todo[Lecture 2/19/2021]
 
 //-----------------------------
 |2
