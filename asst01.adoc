@@ -40,7 +40,7 @@ Our soup of the day is wild rice.
 The special tonight is salmon,
 and for dessert, try our world-famous peach cobbler.
 
-$ python3 menu.py
+$ java Menu.java
 Soup: cup noodles
 Special: pizza
 Dessert: M&Ms
