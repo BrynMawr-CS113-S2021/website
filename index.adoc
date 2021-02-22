@@ -11,9 +11,10 @@ include::header.adoc[]
 
 [.anns]
 == Announcements
-* link:asst00.html[Assignment 0] is due in two parts on February 18th and February 19th at midnight.
+* link:asst01.html[Assignment 1] is due on February 26
 * link:develEnvSetup.html[Instructions for setting up Java]
-* Topic this week: link:#variables[Variables and data types]
+* Topic this week: link:#if[Booleans and conditionals]
+* Labs this week will be small meet-ang-greets over zoom
 
 == **Schedule**
 
