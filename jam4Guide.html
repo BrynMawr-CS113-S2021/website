@@ -16,7 +16,6 @@
 <ul class="sectlevel1">
 <li><a href="#_jam_4_study_guide">Jam 4: Study Guide</a></li>
 <li><a href="#_practice_questions">Practice questions</a></li>
-<li><a href="#_answers">Answers</a></li>
 </ul>
 </div>
 </div>
@@ -31,7 +30,7 @@
 <p>Topics:</p>
 </div>
 <div class="paragraph">
-<p>This quiz includes the previous topics from Quiz 1, 2 and 3 plus</p>
+<p>This quiz includes the previous topics from Jams 1, 2 and 3 plus</p>
 </div>
 <div class="ulist">
 <ul>
@@ -84,7 +83,7 @@
 <h2 id="_practice_questions">Practice questions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>1) Loop practice. Can you write loops in <code>setup()</code> which produce the following console output?</p>
+<p>1) Loop practice. Can you write loops in <code>main</code> which produce the following console output?</p>
 </div>
 <div class="ulist">
 <ul>
@@ -212,7 +211,7 @@ Sum: -0.28029633</code></pre>
 </div>
 <div class="paragraph">
 <p>3) Function practice. Write functions corresponding to the following specifications.
-For each question, test your function from <code>setup()</code> using an array of random values
+For each question, test your function from <code>main</code> using an array of random values
 as input.  Your function should not hard-code the length of the array. You should also
 print the result to the console.</p>
 </div>
@@ -227,8 +226,8 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">// Implement function: milesToKilometers
-// Input: miles (float)
-// output: kilometers (float)</code></pre>
+// Input: miles (double)
+// output: kilometers (double)</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -241,9 +240,9 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">// Implement function: computeTip
-// Input: total cost (float)
-// Input: tip percent (float)
-// Output: float</code></pre>
+// Input: total cost (double)
+// Input: tip percent (double)
+// Output: double</code></pre>
 </div>
 </div>
 <div class="ulist">
@@ -256,21 +255,21 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">// Implement function: computeAverage
-// Input: values (array of float)
-// Output: float</code></pre>
+// Input: values (array of double)
+// Output: double</code></pre>
 </div>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Write a function that returns true if an array of float has a negative number on it.</p>
+<p>Write a function that returns true if an array of double has a negative number on it.</p>
 </li>
 </ul>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">// Implement function: containsNegative
-// Input: values (array of float)
+// Input: values (array of double)
 // Output: boolean</code></pre>
 </div>
 </div>
@@ -284,7 +283,7 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">// Implement function: reverseArray
-// Input: values (array of float)
+// Input: values (array of double)
 // Output: values (array of float)</code></pre>
 </div>
 </div>
@@ -328,25 +327,21 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 </ul>
 </div>
 <div class="paragraph">
-<p>5) Write a program that produces the following image using loops.</p>
-</div>
-<div class="paragraph">
-<p><span class="image"><img src="img/Q4-loops_5x3.png" alt="Q4 loops 5x3"></span></p>
-</div>
-<div class="paragraph">
 <p>6) A programmer has a bug in her code. She expected compute to return 4.0 but it&#8217;s returning 3.0. What&#8217;s wrong?</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">float compute(float a, float b, float c) {
-  float tmp = a + b;
-  return tmp - c;
-  tmp += 1.0;
-}
+<pre class="highlight"><code class="language-java" data-lang="java">class Mystery {
+  public static float compute(float a, float b, float c) {
+    float tmp = a + b;
+    return tmp - c;
+    tmp += 1.0;
+  }
 
-void setup() {
-  float result = compute(1.0, 4.0, 2.0);
-  println(result);
+  public static void main() {
+    float result = compute(1.0, 4.0, 2.0);
+    System.out.println(result);
+  }
 }</code></pre>
 </div>
 </div>
@@ -355,25 +350,27 @@ void setup() {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">int mystery(int[] values) {
-  int total = 0;
-  for (int i = 0; i &lt; values.length; i++) {
-    int value = values[i];
-    if (values[i] &lt; 0) {
-      value = -value;
+<pre class="highlight"><code class="language-java" data-lang="java">class Mystery {
+  public static int mystery(int[] values) {
+    int total = 0;
+    for (int i = 0; i &lt; values.length; i++) {
+      int value = values[i];
+      if (values[i] &lt; 0) {
+        value = -value;
+      }
+      total += value;
+      System.out.println("mystery: ", value, total);
     }
-    total += value;
-    println("mystery: ", value, total);
+    return total;
   }
-  return total;
-}
 
-void setup() {
-  int[] values = {-1, 0, 1, 2, 3};
-  println("Checkpoint 1:", values[2]);
+  public static void main(String[] args) {
+    int[] values = {-1, 0, 1, 2, 3};
+    System.out.println("Checkpoint 1:", values[2]);
 
-  int result = mystery(values);
-  println("Checkpoint 2: ", result);
+    int result = mystery(values);
+    System.out.println("Checkpoint 2: ", result);
+  }
 }</code></pre>
 </div>
 </div>
@@ -398,35 +395,37 @@ void setup() {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">String snaf(int a) {
-  if (a &lt; 5) {
-    return "pop";
+<pre class="highlight"><code class="language-java" data-lang="java">class Mystery {
+  public static String snaf(int a) {
+    if (a &lt; 5) {
+      return "pop";
+    }
+    else {
+      return "crackle";
+    }
   }
-  else {
-    return "crackle";
+
+  public static int fee(int q) {
+    return -q;
   }
-}
 
-int fee(int q) {
-  return -q;
-}
+  public static int bar(int u, int v) {
+    return -10*u + fee(v);
+  }
 
-int bar(int u, int v) {
-  return -10*u + fee(v);
-}
+  public static int foo(int x, int y) {
+    return x*10 - fee(y);
+  }
 
-int foo(int x, int y) {
-  return x*10 - fee(y);
-}
-
-void setup() {
-  int a = -5;
-  int b = 5;
-  int c = 10;
-  int d = foo(a, b);
-  int e = bar(b, a);
-  String result = snaf(d+e);
-  println(result, d, e, d+e);
+  public static void main(String[] args) {
+    int a = -5;
+    int b = 5;
+    int c = 10;
+    int d = foo(a, b);
+    int e = bar(b, a);
+    String result = snaf(d+e);
+    System.out.println(result, d, e, d+e);
+  }
 }</code></pre>
 </div>
 </div>
@@ -442,25 +441,27 @@ void setup() {
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">void setup() {
+<pre class="highlight"><code class="language-java" data-lang="java">class Main {
+  public static void main(String[] args) {
 
-  Mystery m1 = new Mystery(4,1);
-  Mystery m2 = new Mystery(1,1);
+    Mystery m1 = new Mystery(4,1);
+    Mystery m2 = new Mystery(1,1);
 
-  int result1 = 0;
-  int result2 = 0;
-  result1 = m1.compute(2);
-  result2 = m2.compute(2);
-  println("BEFORE compute1: ", result1);
-  println("BEFORE compute2: ", result2);
+    int result1 = 0;
+    int result2 = 0;
+    result1 = m1.compute(2);
+    result2 = m2.compute(2);
+    System.out.println("BEFORE compute1: ", result1);
+    System.out.println("BEFORE compute2: ", result2);
 
-  m1.setA(3);
-  m2.setB(3);
+    m1.setA(3);
+    m2.setB(3);
 
-  result1 = m1.compute(2);
-  result2 = m2.compute(2);
-  println("AFTER compute1: ", result1);
-  println("AFTER compute2: ", result2);
+    result1 = m1.compute(2);
+    result2 = m2.compute(2);
+    System.out.println("AFTER compute1: ", result1);
+    System.out.println("AFTER compute2: ", result2);
+  }
 }</code></pre>
 </div>
 </div>
@@ -517,322 +518,10 @@ void setup() {
 </div>
 </div>
 </div>
-<div class="sect1">
-<h2 id="_answers">Answers</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>1)</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">for (int i = -5; i &lt;= 5; i++) {
-   println("The next number is:", i);
-}</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">for (float i = 10; i &lt; 100; i+=10) {
-   println("X =", i);
-}</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">for (int i = 10; i &gt; 0; i--) {
-   println(i);
-}
-println("Blast off!")</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">// Using an accumulator
-String s = "*";
-for (int i = 0; i &lt; 5; i++) {
-   s += "*";
-   println(s);
-}</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">// Using print statements, rather than an accumulator
-for (int i = 0; i &lt; 5; i++) {
-   for (int j = 0; j &lt; 5; j++) {
-      print("*");
-   }
-   println();
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>2)</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">float total = 0.0;
-for (int i = 0; i &lt; 5; i++) {
-  float value = random(-10,10);
-  total += value;
-  println(value);
-}
-println("Sum: ", total);</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">float total = 0.0;
-for (int i = 0; i &lt; 5; i++) {
-  float value = random(-10,10);
-  total += value;
-  println(value);
-}
-println("Sum: ", total);</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">float maxValue = -11.0;
-for (int i = 0; i &lt; 5; i++) {
-  float value = random(-10,10);
-  if (value &gt; maxValue) {
-    maxValue = value;
-  }
-  println(value);
-}
-println("Max: ", maxValue);</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>3)</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">// Implement function: milesToKilometers
-// Input: miles (float)
-// output: kilometers (float)
-float milesToKilometers(float m) {
-  float km = m * 1.609;
-  return km;
-}
-
-void setup() {
-  for (float m = 1.0; m &lt;= 3.0; m += 0.25) {
-    float result = milesToKilometers(m);
-  }
-}</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">// Implement function: computeTip
-// Input: total cost (float)
-// Input: tip percent (float)
-// Output: float
-float computeTip(float totalCost, float percent) {
-  float tip = totalCost * percent;
-  return tip;
-}</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">// Implement function: computeAverage
-// Input: values (array of float)
-// Output: float
-float computeAverage(float[] values) {
-  float total = 0.0;
-  for (int i = 0; i &lt; values.length; i++) {
-    float value = values[i];
-    total += value;
-  }
-  return total / values.length;
-}</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">// Implement function: containsNegative
-// Input: values (array of float)
-// Output: boolean
-boolean containsNegative(float[] values) {
-  for (int i = 0; i &lt; values.length; i++) {
-    if (values[i] &lt; 0) {
-      return true;
-    }
-  }
-  return false;
-}</code></pre>
-</div>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">// Implement function: reverseArray
-// Input: values (array of float)
-// Output: values (array of float)
-float[] reverseArray(float[] input) {
-  float[] result = new float[input.length];
-  for (int i = 0; i &lt; input.length; i++) {
-    int reverseIdx = input.length - i - 1;
-    result[reverseIdx] = input[i];
-  }
-  return reverseIdx;
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>4)</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">class Movie {
-  String mTitle;
-  float mDuration;
-  int mYear;
-  String[] mActors;
-
-  // Constructor
-  Movie(String title, float duration, int year, String[] actors) {
-    mTitle = title;
-    mDuration = duration;
-    mYear = year;
-    mActors = actors;
-  }
-
-  // Accessor for title
-  String getTitle() {
-    return mTitle;
-  }
-
-  // Mutator for title
-  void setTitle(String title) {
-    mTitle = title;
-  }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>And below is code to test the class</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">void setup() {
-  float minutes = 2*60 + 26;
-  String[] actors = {"Jack Nicholson", "Shelley Duval"};
-
-  // Be careful to list parameters in the correct order!
-  // They must match the inputs to the constructor
-  Movie theShining = new Movie("The Shining", duration, 1980, actors);
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>5)</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">void setup() {
-  size(600, 600);
-
-  int numRows = 3;
-  int numCols = 5;
-  int size = 100; // size of each circle
-  for (float y = size/2; y &lt; numRows*size; y += size) {
-    for (float x = size/2; x &lt; numCols*size; x += size) {
-      ellipse(x, y, size, size);
-    }
-  }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>6) No code is executed after a function returns. Therefore, the line <code>tmp += 1.0</code> is not executed in
-the function <code>compute</code>.</p>
-</div>
-<div class="paragraph">
-<p>7)</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Run the program to test the output</p>
-</li>
-<li>
-<p>values, result</p>
-</li>
-<li>
-<p>values, total, i, value</p>
-</li>
-<li>
-<p>integer</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>8) Run the program to check your answer</p>
-</div>
-<div class="paragraph">
-<p>9)</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Run the program to test the output</p>
-</li>
-<li>
-<p>Mystery contains one constructor which takes x and y as input</p>
-</li>
-<li>
-<p>a, b</p>
-</li>
-<li>
-<p>a, b, factor</p>
-</li>
-<li>
-<p>setA, setB, compute, Mystery (the constructor)
-*</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">class Mystery {
-
-  int a = 0;
-  int b = 0;
-
-  Mystery(int x, int y) {
-    a = x;
-    b = y;
-  }
-
-  // The accessor for a
-  int getA() {
-    return a;
-  }
-  // End added code
-
-  void setA(int x) {
-    a = x;
-  }
-
-  void setB(int y) {
-    b = y;
-  }
-
-  int compute(int factor) {
-    return a + factor*b;
-  }
-}</code></pre>
-</div>
-</div>
-</div>
-</div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-22 20:38:49 -0500
+Last updated 2021-02-23 15:59:39 -0500
 </div>
 </div>
 </body>

@@ -11,7 +11,7 @@ Jams are open book. 40 minutes in lab.
 
 Topics:
 
-This quiz includes the previous topics from Quiz 1, 2 and 3 plus
+This quiz includes the previous topics from Jams 1, 2 and 3 plus
 
 * arrays
 * classes
@@ -29,7 +29,7 @@ General quiz self-assessment:
 
 = Practice questions
 
-1) Loop practice. Can you write loops in `setup()` which produce the following console output?
+1) Loop practice. Can you write loops in `main` which produce the following console output?
 
 * Write a loop that prints the following sequence to the console
 [source,java]
@@ -119,7 +119,7 @@ Sum: -0.28029633
 * Using a loop, compute the maximum value of 5 random numbers between -10 and 10.
 
 3) Function practice. Write functions corresponding to the following specifications.
-For each question, test your function from `setup()` using an array of random values 
+For each question, test your function from `main` using an array of random values 
 as input.  Your function should not hard-code the length of the array. You should also 
 print the result to the console.
 
@@ -129,8 +129,8 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 [source,java]
 ----
 // Implement function: milesToKilometers
-// Input: miles (float)
-// output: kilometers (float)
+// Input: miles (double)
+// output: kilometers (double)
 ----
 
 * Write a function that computes the tip. 
@@ -138,9 +138,9 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 [source,java]
 ----
 // Implement function: computeTip
-// Input: total cost (float)
-// Input: tip percent (float)
-// Output: float
+// Input: total cost (double)
+// Input: tip percent (double)
+// Output: double
 ----
 
 
@@ -149,16 +149,16 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 [source,java]
 ----
 // Implement function: computeAverage
-// Input: values (array of float)
-// Output: float
+// Input: values (array of double)
+// Output: double
 ----
 
-* Write a function that returns true if an array of float has a negative number on it.
+* Write a function that returns true if an array of double has a negative number on it.
 
 [source,java]
 ----
 // Implement function: containsNegative
-// Input: values (array of float)
+// Input: values (array of double)
 // Output: boolean
 ----
 
@@ -167,7 +167,7 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 [source,java]
 ----
 // Implement function: reverseArray
-// Input: values (array of float)
+// Input: values (array of double)
 // Output: values (array of float)
 ----
 
@@ -199,23 +199,21 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 * Test your Movie class. Create a Movie object for "The Shining" which was made in 1980, is 
 2 hours and 26 minutes long, and stars Jack Nicholson and Shelley Duval. Create your object in `setup()`
 
-5) Write a program that produces the following image using loops.
-
-image:Q4-loops_5x3.png[]
-
 6) A programmer has a bug in her code. She expected compute to return 4.0 but it's returning 3.0. What's wrong?
 
 [source,java]
 ----
-float compute(float a, float b, float c) {
-  float tmp = a + b;
-  return tmp - c;
-  tmp += 1.0;
-}
+class Mystery {
+  public static float compute(float a, float b, float c) {
+    float tmp = a + b;
+    return tmp - c;
+    tmp += 1.0;
+  }
 
-void setup() {
-  float result = compute(1.0, 4.0, 2.0);
-  println(result);
+  public static void main() {
+    float result = compute(1.0, 4.0, 2.0);
+    System.out.println(result);
+  }
 }
 ----
 
@@ -223,25 +221,27 @@ void setup() {
 
 [source,java]
 ----
-int mystery(int[] values) {
-  int total = 0;
-  for (int i = 0; i < values.length; i++) {
-    int value = values[i];
-    if (values[i] < 0) {
-      value = -value;
+class Mystery {
+  public static int mystery(int[] values) {
+    int total = 0;
+    for (int i = 0; i < values.length; i++) {
+      int value = values[i];
+      if (values[i] < 0) {
+        value = -value;
+      }
+      total += value;
+      System.out.println("mystery: ", value, total);
     }
-    total += value;
-    println("mystery: ", value, total);
+    return total;
   }
-  return total;
-}
 
-void setup() {
-  int[] values = {-1, 0, 1, 2, 3};
-  println("Checkpoint 1:", values[2]);
-  
-  int result = mystery(values);
-  println("Checkpoint 2: ", result);
+  public static void main(String[] args) {
+    int[] values = {-1, 0, 1, 2, 3};
+    System.out.println("Checkpoint 1:", values[2]);
+    
+    int result = mystery(values);
+    System.out.println("Checkpoint 2: ", result);
+  }
 }
 ----
 
@@ -254,36 +254,37 @@ void setup() {
 
 [source,java]
 ----
-
-String snaf(int a) {
-  if (a < 5) {
-    return "pop";
+class Mystery {
+  public static String snaf(int a) {
+    if (a < 5) {
+      return "pop";
+    }
+    else {
+      return "crackle";
+    }
   }
-  else {
-    return "crackle";
+
+  public static int fee(int q) {
+    return -q;
   }
-}
 
-int fee(int q) {
-  return -q;
-}
+  public static int bar(int u, int v) {
+    return -10*u + fee(v);
+  }
 
-int bar(int u, int v) {
-  return -10*u + fee(v);
-}
+  public static int foo(int x, int y) {
+    return x*10 - fee(y);
+  }
 
-int foo(int x, int y) {
-  return x*10 - fee(y);
-}
-
-void setup() {
-  int a = -5;
-  int b = 5;
-  int c = 10;
-  int d = foo(a, b);
-  int e = bar(b, a);
-  String result = snaf(d+e);
-  println(result, d, e, d+e);
+  public static void main(String[] args) {
+    int a = -5;
+    int b = 5;
+    int c = 10;
+    int d = foo(a, b);
+    int e = bar(b, a);
+    String result = snaf(d+e);
+    System.out.println(result, d, e, d+e);
+  }
 }
 ----
 
@@ -293,25 +294,27 @@ void setup() {
 
 [source,java]
 ----
-void setup() {
-  
-  Mystery m1 = new Mystery(4,1);
-  Mystery m2 = new Mystery(1,1);
-  
-  int result1 = 0;
-  int result2 = 0;
-  result1 = m1.compute(2);
-  result2 = m2.compute(2);
-  println("BEFORE compute1: ", result1);
-  println("BEFORE compute2: ", result2);
-  
-  m1.setA(3);
-  m2.setB(3);
-  
-  result1 = m1.compute(2);
-  result2 = m2.compute(2);
-  println("AFTER compute1: ", result1);
-  println("AFTER compute2: ", result2);
+class Main {
+  public static void main(String[] args) {
+    
+    Mystery m1 = new Mystery(4,1);
+    Mystery m2 = new Mystery(1,1);
+    
+    int result1 = 0;
+    int result2 = 0;
+    result1 = m1.compute(2);
+    result2 = m2.compute(2);
+    System.out.println("BEFORE compute1: ", result1);
+    System.out.println("BEFORE compute2: ", result2);
+    
+    m1.setA(3);
+    m2.setB(3);
+    
+    result1 = m1.compute(2);
+    result2 = m2.compute(2);
+    System.out.println("AFTER compute1: ", result1);
+    System.out.println("AFTER compute2: ", result2);
+  }
 }
 ----
 
@@ -350,278 +353,3 @@ class Mystery {
 * What methods are defined in `Mystery`? 
 * Implement an accessor method for the attribute (e.g. member variable) `a` in `Mystery`. 
 
-
-= Answers
-
-1) 
-
-[source,java]
-----
-for (int i = -5; i <= 5; i++) {
-   println("The next number is:", i);
-}
-----
-
-[source,java]
-----
-for (float i = 10; i < 100; i+=10) {
-   println("X =", i);
-}
-----
-
-[source,java]
-----
-for (int i = 10; i > 0; i--) {
-   println(i);
-}
-println("Blast off!")
-----
-
-[source,java]
-----
-// Using an accumulator
-String s = "*";
-for (int i = 0; i < 5; i++) {
-   s += "*";
-   println(s);
-}
-----
-
-[source,java]
-----
-// Using print statements, rather than an accumulator
-for (int i = 0; i < 5; i++) {
-   for (int j = 0; j < 5; j++) {
-      print("*");
-   }
-   println();
-}
-----
-
-2) 
-
-[source,java]
-----
-float total = 0.0;
-for (int i = 0; i < 5; i++) {
-  float value = random(-10,10);
-  total += value;
-  println(value);
-} 
-println("Sum: ", total);
-----
-
-[source,java]
-----
-float total = 0.0;
-for (int i = 0; i < 5; i++) {
-  float value = random(-10,10);
-  total += value;
-  println(value);
-} 
-println("Sum: ", total);
-----
-
-[source,java]
-----
-float maxValue = -11.0;
-for (int i = 0; i < 5; i++) {
-  float value = random(-10,10);
-  if (value > maxValue) {
-    maxValue = value;
-  }
-  println(value);
-} 
-println("Max: ", maxValue);
-----
-
-3) 
-
-[source,java]
-----
-// Implement function: milesToKilometers
-// Input: miles (float)
-// output: kilometers (float)
-float milesToKilometers(float m) {
-  float km = m * 1.609;
-  return km;
-}
-
-void setup() {
-  for (float m = 1.0; m <= 3.0; m += 0.25) {
-    float result = milesToKilometers(m);
-  }
-}
-----
-
-[source,java]
-----
-// Implement function: computeTip
-// Input: total cost (float)
-// Input: tip percent (float)
-// Output: float
-float computeTip(float totalCost, float percent) {
-  float tip = totalCost * percent;
-  return tip;
-}
-----
-
-[source,java]
-----
-// Implement function: computeAverage
-// Input: values (array of float)
-// Output: float
-float computeAverage(float[] values) {
-  float total = 0.0;
-  for (int i = 0; i < values.length; i++) {
-    float value = values[i];
-    total += value;
-  }
-  return total / values.length;
-}
-----
-
-[source,java]
-----
-// Implement function: containsNegative
-// Input: values (array of float)
-// Output: boolean
-boolean containsNegative(float[] values) {
-  for (int i = 0; i < values.length; i++) {
-    if (values[i] < 0) {
-      return true;
-    }
-  }
-  return false;
-}
-----
-
-[source,java]
-----
-// Implement function: reverseArray
-// Input: values (array of float)
-// Output: values (array of float)
-float[] reverseArray(float[] input) {
-  float[] result = new float[input.length];
-  for (int i = 0; i < input.length; i++) {
-    int reverseIdx = input.length - i - 1;
-    result[reverseIdx] = input[i];
-  }
-  return reverseIdx;
-}
-----
-
-4)
-
-[source,java]
-----
-class Movie {
-  String mTitle;
-  float mDuration;
-  int mYear;
-  String[] mActors;
-
-  // Constructor
-  Movie(String title, float duration, int year, String[] actors) {
-    mTitle = title;
-    mDuration = duration;
-    mYear = year;
-    mActors = actors;
-  }
-
-  // Accessor for title
-  String getTitle() {
-    return mTitle;
-  }
-
-  // Mutator for title
-  void setTitle(String title) {
-    mTitle = title;
-  }
-}
-----
-
-And below is code to test the class
-
-[source,java]
-----
-void setup() {
-  float minutes = 2*60 + 26;
-  String[] actors = {"Jack Nicholson", "Shelley Duval"};
-
-  // Be careful to list parameters in the correct order!
-  // They must match the inputs to the constructor
-  Movie theShining = new Movie("The Shining", duration, 1980, actors);
-}
-----
-
-5) 
-
-[source,java]
-----
-void setup() {
-  size(600, 600);
-  
-  int numRows = 3;
-  int numCols = 5;
-  int size = 100; // size of each circle
-  for (float y = size/2; y < numRows*size; y += size) {
-    for (float x = size/2; x < numCols*size; x += size) {
-      ellipse(x, y, size, size); 
-    }
-  }
-}
-----
-
-6) No code is executed after a function returns. Therefore, the line `tmp += 1.0` is not executed in 
-the function `compute`.
-
-7) 
-
-* Run the program to test the output
-* values, result
-* values, total, i, value
-* integer
-
-8) Run the program to check your answer
-
-9) 
-
-* Run the program to test the output
-* Mystery contains one constructor which takes x and y as input
-* a, b
-* a, b, factor
-* setA, setB, compute, Mystery (the constructor)
-* 
-
-[source,java]
-----
-class Mystery {
-
-  int a = 0;
-  int b = 0;
-
-  Mystery(int x, int y) {
-    a = x;
-    b = y;
-  }
-
-  // The accessor for a
-  int getA() {
-    return a;
-  }
-  // End added code
-
-  void setA(int x) {
-    a = x;
-  }
-
-  void setB(int y) {
-    b = y;
-  }
-
-  int compute(int factor) {
-    return a + factor*b;
-  }
-}
-----

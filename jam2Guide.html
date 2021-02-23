@@ -16,7 +16,6 @@
 <ul class="sectlevel1">
 <li><a href="#_jam_2_study_guide">Jam 2: Study Guide</a></li>
 <li><a href="#_practice_questions">Practice questions</a></li>
-<li><a href="#_answers">Answers</a></li>
 </ul>
 </div>
 </div>
@@ -31,12 +30,12 @@
 <p>Topics:</p>
 </div>
 <div class="paragraph">
-<p>This quiz includes the previous topics from Quiz 1 plus
+<p>This quiz includes the previous topics from Jam 1 plus
 * Conditional statements: <code>if</code>/<code>else</code>
 * Logical and relational operators: <code>&amp;&amp;</code>, <code>||</code>, <code>!</code>, <code>&#8656;</code>, <code>&gt;=</code>, <code>&gt;</code>, <code>&lt;</code> , <code>==</code>
 * Arithmetic operators: <code>+</code>, <code>-</code>, <code><strong></code>, <code>/</code>, <code>++</code>, <code>--</code>, <code>+=</code> , <code>-=</code>, <code></strong>=</code>, <code>/=</code>
 * Accumulator variable pattern
-* The empty string: <code>""</code></p>
+* String comparisons, the empty string: <code>""</code></p>
 </div>
 </div>
 </div>
@@ -110,7 +109,7 @@ boolean Done = false;</code></pre>
 <p><code>(5/x) &gt; 7.0</code></p>
 </li>
 <li>
-<p><code>message == "cats"</code></p>
+<p><code>message.compareTo("cats") == 0</code></p>
 </li>
 <li>
 <p><code>!Done</code></p>
@@ -121,70 +120,23 @@ boolean Done = false;</code></pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>3) Consider the following program</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-python" data-lang="python">int x = 3;
-void setup() {
-}
-
-void draw() {
-  if (x &gt; 0) {
-    x = x / 2;
-  }
-  else {
-    x = ( 3*x + 1 ) / 2;
-  }
-  println("Frame: " + frameCount + " The answer is " + x); // trace variables here
-}</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>What is the output of this program on the first frame?</p>
-</li>
-<li>
-<p>Create a table having columns for <code>frameCount</code>, <code>x &gt; 0</code>, and <code>x</code> and trace the values
-of these variables for the first three draw calls (show their values for the <code>println()</code> statement).</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>4) Write a program that draws square if a random number (between 0 and 100) is less than 30
-and draws an ellipse otherwise.</p>
-</div>
-<div class="paragraph">
-<p>5) Write a program that draws square if the user pressed 's', a triangle if the user pressed 't',
-and a blank screen if the user presses any other key.</p>
-</div>
-<div class="paragraph">
-<p>6) Write a program that animates a ball to go from the bottom left of the screen to the top right.</p>
-</div>
-<div class="paragraph">
-<p>7) Write a program in which a shape starts at full opacity and fades to invisible.</p>
-</div>
-<div class="paragraph">
 <p>8) Consider the following code</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code class="language-java" data-lang="java">String colorName = "purple";
 
-void setup() {
-  if (colorName != "red") {
-    println(colorName + " is not primary");
-  }
-  else if (colorName != "blue") {
-    println(colorName + " is not primary");
-  }
-  else if (colorName != "yellow") {
-    println(colorName + " is not primary");
-  }
-  else {
-    println(colorName + " is primary");
-  }
+if (colorName.compareTo("red") != 0) {
+  System.out.println(colorName + " is not primary");
+}
+else if (colorName.compareTo("blue") != 0 {
+  System.out.println(colorName + " is not primary");
+}
+else if (colorName.compareTo("yellow") != 0) {
+  System.out.println(colorName + " is not primary");
+}
+else {
+  System.out.println(colorName + " is primary");
 }</code></pre>
 </div>
 </div>
@@ -211,426 +163,12 @@ void setup() {
 </li>
 </ul>
 </div>
-<div class="paragraph">
-<p>9) Consider the following code</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">float diameter = random(0,500);
-void setup() {
-  size(500,500);
-
-  if (diameter &lt; 100) {
-    ellipse( 50,  50, diameter, diameter);
-    ellipse(450, 450, diameter, diameter);
-  }
-  else {
-    ellipse( 250,  250, diameter, diameter);
-  }
-}</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>What range of values can the variable diameter take on?</p>
-</li>
-<li>
-<p>What image would be drawn if diameter has value 2?</p>
-</li>
-<li>
-<p>What image would be drawn is diameter has value 300?</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>10) Consider the following program</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">void setup() {
-  size(600,400);
-}
-
-void draw() {
-  background(255);
-  if (mouseX &lt; 100) {
-    ellipse( 50, 100, mouseX, mouseX*2);
-    ellipse(550, 300, mouseX, mouseX*2);
-  }
-  else {
-    ellipse( 300,  200, mouseX, 400);
-  }
-}</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>What range of values can <code>mouseX</code> take on?</p>
-</li>
-<li>
-<p>What range of values can <code>mouseY</code> take on?</p>
-</li>
-<li>
-<p>What image would be drawn if mouseX has value 50?</p>
-</li>
-<li>
-<p>What image would be drawn if mouseX has value 300?</p>
-</li>
-<li>
-<p>Could the above code generate the following image? Why or why not?</p>
-</li>
-</ul>
-</div>
-<div class="imageblock thumb">
-<div class="content">
-<img src="img/Q2-wrong.png" alt="Q2 wrong" width="200px">
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
-<h2 id="_answers">Answers</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p>The most effective way to study is to attempt the questions on your own without
-looking at the answers first.</p>
-</div>
-<div class="paragraph">
-<p>1)</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>2 + 3</code> (5, int)</p>
-</li>
-<li>
-<p><code>2*3.0</code> (6.0, float)</p>
-</li>
-<li>
-<p><code>2.0 + 3</code> (5.0, int)</p>
-</li>
-<li>
-<p><code>6/10</code> (0 int)</p>
-</li>
-<li>
-<p><code>6/10.0</code> (0.6, float)</p>
-</li>
-<li>
-<p><code>5 - 2 * 3</code> (-1, int)</p>
-</li>
-<li>
-<p><code>"12"</code> ("12", String)</p>
-</li>
-<li>
-<p><code>2.0</code> (2.0, float)</p>
-</li>
-<li>
-<p><code>2+4*2+1</code> (11, int)</p>
-</li>
-<li>
-<p><code>"I love " + "CS"</code> ("I love CS", String)</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>2)</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>int x = 5;
-int y = 13;
-String message = "cat!";
-boolean Done = false;</pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p><code>x &lt; 10 &amp;&amp; y &lt; 10</code> (false, boolean)</p>
-</li>
-<li>
-<p><code>x &lt; 10 || y &lt; 10</code> (true, boolean)</p>
-</li>
-<li>
-<p><code>x &lt; 10 &amp;&amp; x &gt; 0</code> (true, boolean)</p>
-</li>
-<li>
-<p><code>x &gt; 10 || x &lt; 0</code> (false, boolean)</p>
-</li>
-<li>
-<p><code>(5/x) &gt; 7.0</code> (false, boolean)</p>
-</li>
-<li>
-<p><code>message == "cats"</code> (false, boolean)</p>
-</li>
-<li>
-<p><code>!Done</code> (true, boolean)</p>
-</li>
-<li>
-<p><code>Done || (x &lt; 6 &amp;&amp; y &gt; 10)</code> (true, boolean)</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>3a) The first time <code>draw()</code> is called, we print "Frame 1 The answer is 1". One
-tricky detail is that <code>frameCount</code> is 0 in <code>setup()</code> and 1 on the first <code>draw()</code> call.
-The best way to check is to run the program.</p>
-</div>
-<div class="paragraph">
-<p>3b) The question asked to trace the variables in draw(), so this yields</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">frameCount</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x &gt; 0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 (result of 3/2)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0 (result of 1/2)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0 (result of 0/2)</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>If we traced the variable from the beginning of the program, we would get</p>
-</div>
-<table class="tableblock frame-all grid-all stretch">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">frameCount</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x &gt; 0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">x</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3 (result of variable initialization)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">1 (result of 3/2)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0 (result of 1/2)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">true</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0 (result of 0/2)</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>4) Write a program that draws square if a random number between 0 and 100 is less than 30 and draws an ellipse otherwise.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">void setup() {
-  size(500,500);
-  int number = random(0,100);
-  if (number &lt; 30) {
-    rect(20,30, 100, 400);
-  }
-  else {
-    ellipse(200,300, 100, 400);
-  }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Notes:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>The canvas sizes and shape parameters can be anything</p>
-</li>
-<li>
-<p>The types of shapes must be correct inside the if statement</p>
-</li>
-<li>
-<p>The parameters passed to random are important</p>
-</li>
-<li>
-<p>The <code>if</code> condition is important</p>
-</li>
-<li>
-<p>In general, the program should implement anything that is explicitly mentioned in the question.
-Other details can be anything.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>5) Write a program that draws square if the user pressed 's', a triangle is the user pressed 't', and a blank screen if the user presses any other key.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">void setup() {
-  size(500,500);
-}
-
-void draw() {
-  if (key == 's') {
-    rect(20,30, 100, 400);
-  }
-  else if (key == 't') {
-    triangle(10, 20, 100, 400, width, 0);
-  }
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>6) Write a program that animates a ball to go from the bottom left of the screen to the top right.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">float x = 0;
-float y = 0;
-void setup() {
-  size(500,500);
-  y = height;
-}
-
-void draw() {
-  background(255);
-  ellipse(x, y, 100, 100);
-  x += 10;
-  y -= 10;
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Notes:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>You could also hard-code <code>y</code> to 500 during initialization</p>
-</li>
-<li>
-<p>Background color is not important, but clearing the screen is important for the animation effect</p>
-</li>
-<li>
-<p>Adding a value to x is important for rightwards movement</p>
-</li>
-<li>
-<p>Subtracting a value to y is important for upwards movement</p>
-</li>
-<li>
-<p>(Less important) To easily achieve a perfect diagonal, define a square canvas and make the x and y change by the same amount</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>7) Write a program in which a shape starts at full opacity and fades to invisible.</p>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">float alpha = 255;
-void setup() {
-  size(500,500);
-}
-
-void draw() {
-  background(255);
-  fill(255,0,255, alpha);
-  ellipse(100, 100, 100, 100);
-  alpha--;
-}</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>Notes:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Clearing the screen is important for the effect to work</p>
-</li>
-<li>
-<p>The color can be anything except white (so we can see the color change) and must include an alpha value</p>
-</li>
-<li>
-<p>You can decrement alpha by any (small) amount</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>8a) You should draw this using diamonds for each condition, paths leading out for "true" and "false" and squares for statement blocks. See the lecture worksheet for examples.</p>
-</div>
-<div class="paragraph">
-<p>8b)</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>"purple is not primary"</p>
-</li>
-<li>
-<p>"red is not primary"</p>
-</li>
-<li>
-<p>"yellow is not primary"</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>9a) Diameter values are in range [0, 500). This notation means the last value 500 is not returned by this call.</p>
-</div>
-<div class="paragraph">
-<p>9b) You should draw this for the quiz. Your answer should have a tiny circle in the top left and bottom right of the screen.</p>
-</div>
-<div class="paragraph">
-<p>9c) You should draw a picture. Your answer would have a large circle in the middle of the screen.</p>
-</div>
-<div class="paragraph">
-<p>10a) mouseX is in range [0,600]</p>
-</div>
-<div class="paragraph">
-<p>10b) mouseY is in range [0, 400]</p>
-</div>
-<div class="paragraph">
-<p>10c) You should draw a picture with an ellipse in the top left and the bottom right. The ellipse should be taller than it is wide.</p>
-</div>
-<div class="paragraph">
-<p>10d) You should draw a picture with a single ellipse in the middle of the canvas. It should be slightly taller than it is wide.</p>
-</div>
-<div class="paragraph">
-<p>10e) No, because when there are two ellipses (e.g. mouseX &lt; 100), the ellipse is always twice as tall as it is wide.</p>
-</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-22 20:38:45 -0500
+Last updated 2021-02-23 15:54:25 -0500
 </div>
 </div>
 </body>

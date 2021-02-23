@@ -38,7 +38,7 @@ This quiz includes the previous topics from Quiz 1-4 plus
 = Practice questions
 
 1) Write a function that takes a String as an input and replaces all occurrences of the letter 
-`e` to `3` and all occurrences of the letter `s` to `5`. Test your function from `setup` using the 
+`e` to `3` and all occurrences of the letter `s` to `5`. Test your function from `main` using the 
 phrases "elephant" and "sour patch kids".
 
 [source, java]
@@ -217,46 +217,50 @@ after selection sort does its first 3 swaps:
 
 [source,java]
 ----
-String replaceChars(String initialString) {
-    String newString = initialString.replace("s", "5");
-    newString = newString.replace("e", "3");
-    return newString;
-}
+class Mystery {
+    String replaceChars(String initialString) {
+        String newString = initialString.replace("s", "5");
+        newString = newString.replace("e", "3");
+        return newString;
+    }
 
-void setup() {
-    String result1 = replaceChars("elephant");
-    println(result1);
+    public static void main(String[] args) {
+        String result1 = replaceChars("elephant");
+        println(result1);
 
-    String result2 = replaceChars("sour patch kids");
-    println(result2);
+        String result2 = replaceChars("sour patch kids");
+        println(result2);
+    }
 }
 ----
 
 [source,java]
 ----
-String replaceChars(String initialString) {
-    String newString = "";
-    for (int i = 0; i < initialString.length(); i++) {
-        char c = initialString.charAt(i);
-        if (c == 's') {
-            newString += "5";
+class Mystery {
+    String replaceChars(String initialString) {
+        String newString = "";
+        for (int i = 0; i < initialString.length(); i++) {
+            char c = initialString.charAt(i);
+            if (c == 's') {
+                newString += "5";
+            }
+            else if (c == 'e') {
+                newString += "3";
+            }
+            else {
+                newString += c;
+            }
         }
-        else if (c == 'e') {
-            newString += "3";
-        }
-        else {
-            newString += c;
-        }
+        return newString;
     }
-    return newString;
-}
 
-void setup() {
-    String result1 = replaceChars("elephant");
-    println(result1);
+    public static void main(String[] args) {
+        String result1 = replaceChars("elephant");
+        println(result1);
 
-    String result2 = replaceChars("sour patch kids");
-    println(result2);
+        String result2 = replaceChars("sour patch kids");
+        println(result2);
+    }
 }
 ----
 
@@ -279,17 +283,19 @@ String reverse(String initialString) {
 
 [source,java]
 ----
-void setup() {
-    // assume the data is in a file called filename.txt
-    String[] lines = loadStrings("filename.txt");
-    for (int i = 0; i < lines.length; i++) {
-        String line = lines[i];
-        String[] tokens = line.split(",");
-        String name = tokens[0];
-        int score = int(tokens[1]);
-        String powerUp = tokens[2];
-        String type = tokens[2];
-        println(name, score, powerUp, type);
+class Mystery {
+    public static void main(String[] args) {
+        // assume the data is in a file called filename.txt
+        String[] lines = loadStrings("filename.txt");
+        for (int i = 0; i < lines.length; i++) {
+            String line = lines[i];
+            String[] tokens = line.split(",");
+            String name = tokens[0];
+            int score = int(tokens[1]);
+            String powerUp = tokens[2];
+            String type = tokens[2];
+            println(name, score, powerUp, type);
+        }
     }
 }
 ----
