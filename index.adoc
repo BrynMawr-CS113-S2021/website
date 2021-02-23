@@ -12,9 +12,9 @@ include::header.adoc[]
 [.anns]
 == Announcements
 * link:asst01.html[Assignment 1] is due on February 26
-* link:develEnvSetup.html[Instructions for setting up Java]
 * Topic this week: link:#if[Booleans and conditionals]
 * Labs this week will be informal check-ins over zoom 
+* We will have Code Jams in lab next week. Check out the link:jam1Guide.html[Jam 1 Study Guide] for details!
 
 == **Schedule**
 
@@ -83,6 +83,10 @@ All TA office hours will be on Zoom. See our course slack for details!
 *  **Slack** Please go to link:https://slack.com/signin[slack.com]. Our workspace is BrynMawr-CS110-F20. You can ask questions and request one-on-one help over zoom using this course's slack channel. 
 *  **Development environment** This refers to the tools we will use to write and run code. We will distribute an installer to help you set this up. We will use git bash, OpenJDK-11, and Visual Studio Code (VS Code).
 
+*Resources*
+
+* link:develEnvSetup.html[Instructions for setting up Java]
+* link:https://github.com/BrynMawr-CS113-S2021/code-examples[JAVA programs from lecture]
 
 == Grading Policies
 

@@ -14,18 +14,22 @@ Topics:
 * Variables: defining and assigning
 * Data types: `String`, `double`, `int` 
 * Command line variables
-* System.out.println(), System.console().readLine()
-* arithmetic functions: +, *, -, /, %
-* math utilities: sqrt, pow, cos, sin, exp, log, etc
-* String concatenations with `+`
+* `System.out.println()`, `System.out.print()`
+* `System.console().readLine()`
+* arithmetic operators: +, *, -, /, %
+* String concatenation with `+`
+* math utilities: sqrt, pow, cos, sin, exp, log, random, etc
 * Operators and expressions, order of operations
+
+Write Java programs to check your answers. Or you can ask a TA or instructor 
+to give feedback on your responses.
 
 = Practice questions
 
 1) What is the **value** and **type** for each of the following expressions? 
 
 - 2 + 3
-- pow(2, 3) <- check me
+- Math.pow(2, 3) 
 - 2.0 + 3
 - 5.5/10
 - 5 - 2 * 3
@@ -36,7 +40,7 @@ Topics:
 - "lol" + "cats"
 
 2) Write a program `Sum.java` that takes two command line arguments, converts them to integers 
-and outputs their sum.  You can assume that the command line arguments are valid integers.
+and outputs their sum.  You can assume that the command line arguments are both valid integers.
 
 [source, subs="quotes"]
 ----
@@ -82,13 +86,57 @@ Total: $ 349.50
 
 5) What is the output of the following program?
 
-TODO
+[source,java]
+----
+public class Cats {
+   public static void main(String[] args) {
+       String type = "tuxedo";
+       int fish = 3;
 
-6) The following program has a bug. Is the error is syntax error, runtime error, or logic error? How can we fix the problem?
-TODO
+       System.out.println("The "+type+" cat caught "+fish+" fish.");
+   } 
+}
+----
 
-7) The following program has a bug. Is the error is syntax error, runtime error, or logic error? How can we fix the problem?
-TODO
+6) The following program has several problems. What are they? For each error, is the error a syntax error, runtime error, or logic error? How can we fix the problem?
+
+[source,java]
+----
+public class Mystery {
+    public static void main(String args) {
+        System.out.print("Enter a value: ");
+        String valueStr = System.console().readLine();
+        int value = Integer.parseInteger(valuStr);
+        int result = value * 10
+        System.out.println("The result is "+result);
+    } 
+}
+----
+
+
+7) The following program has a problem. What is it? Is the error is syntax error, runtime error, or logic error? How can we fix the problem?
+
+[source,java]
+----
+public class Mystery {
+    public static void main(String[] args) {
+        int value = Integer.parseInt(args[0]);
+        float fraction = value / 10;
+        System.out.println("The fraction is "+fraction);
+    } 
+}
+----
 
 8) The following program has a bug. Is the error is syntax error, runtime error, or logic error? How can we fix the problem?
-TODO
+
+[source,java]
+----
+public class Mystery {
+    public static void main(String[] args) {
+        int value = Integer.parseInt(args[0]);
+        float fraction = value / 0;
+        System.out.println("The fraction is "+fraction);
+    } 
+}
+----
+

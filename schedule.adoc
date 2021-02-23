@@ -36,6 +36,7 @@
 * link:asst01.html[Assignment 1]: *Due Feb 26*
 * Lab: Course check-ins
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6b321db9-ca0d-4c57-a77c-acd8013caa1c[Lecture 2/23/2021],
+* link:jam1Guide.html[Jam 1 Study Guide]
 
 //-----------------------------
 |3

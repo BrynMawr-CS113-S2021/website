@@ -41,21 +41,28 @@
 <p>Command line variables</p>
 </li>
 <li>
-<p>System.out.println(), System.console().readLine()</p>
+<p><code>System.out.println()</code>, <code>System.out.print()</code></p>
 </li>
 <li>
-<p>arithmetic functions: +, *, -, /, %</p>
+<p><code>System.console().readLine()</code></p>
 </li>
 <li>
-<p>math utilities: sqrt, pow, cos, sin, exp, log, etc</p>
+<p>arithmetic operators: +, *, -, /, %</p>
 </li>
 <li>
-<p>String concatenations with <code>+</code></p>
+<p>String concatenation with <code>+</code></p>
+</li>
+<li>
+<p>math utilities: sqrt, pow, cos, sin, exp, log, random, etc</p>
 </li>
 <li>
 <p>Operators and expressions, order of operations</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>Write Java programs to check your answers. Or you can ask a TA or instructor
+to give feedback on your responses.</p>
 </div>
 </div>
 </div>
@@ -71,7 +78,7 @@
 <p>2 + 3</p>
 </li>
 <li>
-<p>pow(2, 3) &#8592; check me</p>
+<p>Math.pow(2, 3)</p>
 </li>
 <li>
 <p>2.0 + 3</p>
@@ -101,7 +108,7 @@
 </div>
 <div class="paragraph">
 <p>2) Write a program <code>Sum.java</code> that takes two command line arguments, converts them to integers
-and outputs their sum.  You can assume that the command line arguments are valid integers.</p>
+and outputs their sum.  You can assume that the command line arguments are both valid integers.</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -150,27 +157,68 @@ Total: $ 349.50</code></pre>
 <div class="paragraph">
 <p>5) What is the output of the following program?</p>
 </div>
-<div class="paragraph">
-<p>TODO</p>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public class Cats {
+   public static void main(String[] args) {
+       String type = "tuxedo";
+       int fish = 3;
+
+       System.out.println("The "+type+" cat caught "+fish+" fish.");
+   }
+}</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>6) The following program has a bug. Is the error is syntax error, runtime error, or logic error? How can we fix the problem?
-TODO</p>
+<p>6) The following program has several problems. What are they? For each error, is the error a syntax error, runtime error, or logic error? How can we fix the problem?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public class Mystery {
+    public static void main(String args) {
+        System.out.print("Enter a value: ");
+        String valueStr = System.console().readLine();
+        int value = Integer.parseInteger(valuStr);
+        int result = value * 10
+        System.out.println("The result is "+result);
+    }
+}</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>7) The following program has a bug. Is the error is syntax error, runtime error, or logic error? How can we fix the problem?
-TODO</p>
+<p>7) The following program has a problem. What is it? Is the error is syntax error, runtime error, or logic error? How can we fix the problem?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public class Mystery {
+    public static void main(String[] args) {
+        int value = Integer.parseInt(args[0]);
+        float fraction = value / 10;
+        System.out.println("The fraction is "+fraction);
+    }
+}</code></pre>
+</div>
 </div>
 <div class="paragraph">
-<p>8) The following program has a bug. Is the error is syntax error, runtime error, or logic error? How can we fix the problem?
-TODO</p>
+<p>8) The following program has a bug. Is the error is syntax error, runtime error, or logic error? How can we fix the problem?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">public class Mystery {
+    public static void main(String[] args) {
+        int value = Integer.parseInt(args[0]);
+        float fraction = value / 0;
+        System.out.println("The fraction is "+fraction);
+    }
+}</code></pre>
+</div>
 </div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-22 20:46:59 -0500
+Last updated 2021-02-23 15:46:43 -0500
 </div>
 </div>
 </body>
