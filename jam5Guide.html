@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<title>Jam 5: Study Guide</title>
+<link rel="stylesheet" href="style/cs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_jam_5_study_guide">Jam 5: Study Guide</a></li>
+<li><a href="#_practice_questions">Practice questions</a></li>
+<li><a href="#_answers">Answers</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_jam_5_study_guide">Jam 5: Study Guide</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Jams are open book. 40 minutes in lab.</p>
+</div>
+<div class="paragraph">
+<p><strong>Topics:</strong></p>
+</div>
+<div class="paragraph">
+<p>This quiz includes the previous topics from Quiz 1-4 plus</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>String operations: <code>charAt</code>, <code>length</code>, <code>replace</code>, <code>trim</code>, <code>split</code>, <code>compareTo</code></p>
+</li>
+<li>
+<p>Reading text files using <code>loadStrings</code></p>
+</li>
+<li>
+<p>Linear and binary search</p>
+</li>
+<li>
+<p>Runtime analysis/big-O notation</p>
+</li>
+<li>
+<p>O(1)&#8201;&#8212;&#8201;constant time</p>
+</li>
+<li>
+<p>O(log<sub>2</sub>N)&#8201;&#8212;&#8201;logarithmic (ex: binary search)</p>
+</li>
+<li>
+<p>O(N)&#8201;&#8212;&#8201;linear (ex: linear search)</p>
+</li>
+<li>
+<p>O(N<sup>2</sup>)&#8201;&#8212;&#8201;quadratic (ex: bubble sort)</p>
+</li>
+<li>
+<p>Selection sort and bubble sort</p>
+</li>
+<li>
+<p>Swapping elements in an array</p>
+</li>
+<li>
+<p>Nested loops</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>General quiz self-assessment:</strong></p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Can you define terms?</p>
+</li>
+<li>
+<p>Can you reproduce the execution of the search and sort algorithms from class without looking at a reference?</p>
+</li>
+<li>
+<p>Can you analyze the performance as a function of its input for code involving loops and common operations?</p>
+</li>
+<li>
+<p>Are you familiar with the Processing functions we use in class and labs?</p>
+</li>
+<li>
+<p>Do you know the syntax for defining and using variables, if statements, loops, functions, and classes?</p>
+</li>
+<li>
+<p>Can you read and understand code? Could you spot errors? Can you trace the execution and deduce the values for all variables?</p>
+</li>
+<li>
+<p>Can you write code which solves a given problem? Can you solve it in different ways? For example, if a question asks you to use a function, can you solve the problem using a function?</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_practice_questions">Practice questions</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>1) Write a function that takes a String as an input and replaces all occurrences of the letter
+<code>e</code> to <code>3</code> and all occurrences of the letter <code>s</code> to <code>5</code>. Test your function from <code>setup</code> using the
+phrases "elephant" and "sour patch kids".</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">// Function: replaceChars
+// Input: initialString (String), the original string to modify
+// Output: (String), the modified String</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>2) Write a function that takes a String as an input and returns the reverse String.</p>
+</div>
+<div class="paragraph">
+<p>3) What would the output of the following code be?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">for (int i = 0; i &lt; 2; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        println("i:" + i + " j:" + j);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>4) Write code to load and parse a file with format [Name,Score,PowerUp,Role]</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">Ressie Rask  ,3224,Mushroom,Healer
+Angelique Aust  ,1190,Mushroom,Dps
+Tiny Teamer  ,3722,Mushroom,Tank
+Michell Mancino  ,316,Tea kettle,Dps
+Amos Ackman  ,4989,Fireball,Tank
+Liz Labat  ,714,Mushroom,Healer
+Lawerence Lalonde  ,3921,Mushroom,Dps
+Madelyn Mcjunkin  ,1243,Fireball,Tank
+Echo Eckhardt  ,4831,Mushroom,Dps</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>5) What is the running time of you algorithm in the previous question?</p>
+</div>
+<div class="paragraph">
+<p>6) True/False questions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Linear search requires a number of steps proportional to the size of the list being searched (T/F)</p>
+</li>
+<li>
+<p>Binary search is an O(N<sup>2</sup>) algorithm (T/F)</p>
+</li>
+<li>
+<p>The number of times N can be divided by 2 (before reaching 1) is
+log<sub>2</sub> N (T/F)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>7) How many steps would it take to do binary search on a list of size 1
+million, when the item you are searching for is NOT in the list?</p>
+</div>
+<div class="paragraph">
+<p>8) How many steps would it take to do linear search on a list of size 1
+million, when the item you are searching for is NOT in the list?</p>
+</div>
+<div class="paragraph">
+<p>9) Binary search is much faster than linear search, so why don&#8217;t we use it for every search problem?</p>
+</div>
+<div class="paragraph">
+<p>10) For each iteration of the loop in <code>binarySearch(int x, int[] L)</code>, show the
+<strong>index</strong> values for <code>low</code>, <code>high</code>, and <code>mid</code>, and the value stored at
+location <code>mid</code>.  What will be returned by this function call?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>int x = 67;
+int[] L = {10, 12, 14, 21, 37, 44, 45, 46, 58, 67, 99};
+            0   1   2   3   4   5   6   7   8   9  10
+
+low | high | mid | L[mid]
+- - - - - - - - - - - - -
+    |      |     |
+    |      |     |
+    |      |     |
+    |      |     |</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>11) For each iteration of the loop in <code>binarySearch(int y, int[] L)</code>, show the
+<strong>index</strong> values for low, high, and mid, and the value stored at
+location mid.  What will be returned by this function call?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>int y = 4;
+int[] L = [10, 12, 14, 21, 37, 44, 45, 46, 58, 67, 99];
+            0   1   2   3   4   5   6   7   8   9  10
+
+low | high | mid | L[mid]
+- - - - - - - - - - - - -
+    |      |     |
+    |      |     |
+    |      |     |
+    |      |     |</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>12) Write a function to return the <strong>index</strong> of the smallest item in a given list.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">// Input:  An array of integers
+// Returns: The index of the smallest item in the list,
+//    -1 if the list is empty
+
+int indexOfSmallest(int[] ls) {
+   // complete this function
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>13) How many <strong>steps</strong> are required for each of the following? Classify each one
+as either O(N), O(N<sup>2</sup>), O(log<sub>2</sub> N), O(N log<sub>2</sub> N), or O(1).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">int N = getInputSize();
+for (int i = 0; i &lt; N; i++)
+{
+    for (int j = 0; j &lt; N; j++)
+    {
+        println(i, j);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">int N = getInputSize();
+while (N &gt; 1)
+{
+    print(N)
+    N = N/2
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">int N = getInputSize();
+for (int i = 0; i &lt; N; i++)
+{
+    for (int j = 0; j &lt; 10; j++)
+    {
+        print(i*j);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>14) Which algorithm requires time directly proportional to the size of the input list?</p>
+</div>
+<div class="paragraph">
+<p>+
+    - linear search
+    - binary search
+    - bubble sort
+    - selection sort</p>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="paragraph">
+<p>15) Consider the following function, <code>oneLoop(int[] L)</code>, which is similar to
+the inner loop from bubble sort:</p>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">void oneLoop(int[] L)
+{
+   for (int j = 0; j &lt; L.length()-1; j++)
+   {
+      if (L[j] &gt; L[j+1])
+      {
+         int tmp = L[j+1];
+         L[j+1] = L[j];
+         L[j] = tmp;
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+
+Suppose we run <code>oneLoop</code> on the list <code>L={17,4,19,3,11,8}</code>. What are
+the new contents of <code>L</code>?</p>
+</div>
+<div class="paragraph">
+<p>16) Show how the list <code>L={17,4,19,3,11,8}</code> would be changed
+after selection sort does its first 3 swaps:</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_answers">Answers</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>1) Below are two approaches</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">String replaceChars(String initialString) {
+    String newString = initialString.replace("s", "5");
+    newString = newString.replace("e", "3");
+    return newString;
+}
+
+void setup() {
+    String result1 = replaceChars("elephant");
+    println(result1);
+
+    String result2 = replaceChars("sour patch kids");
+    println(result2);
+}</code></pre>
+</div>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">String replaceChars(String initialString) {
+    String newString = "";
+    for (int i = 0; i &lt; initialString.length(); i++) {
+        char c = initialString.charAt(i);
+        if (c == 's') {
+            newString += "5";
+        }
+        else if (c == 'e') {
+            newString += "3";
+        }
+        else {
+            newString += c;
+        }
+    }
+    return newString;
+}
+
+void setup() {
+    String result1 = replaceChars("elephant");
+    println(result1);
+
+    String result2 = replaceChars("sour patch kids");
+    println(result2);
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>2)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">String reverse(String initialString) {
+    String newString = "";
+    for (int i = 0; i &lt; initialString.length(); i++) {
+        char c = initialString.charAt(i);
+        newString = c + newString;
+    }
+    return newString;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>3) Compute your answer on paper but run it to check!</p>
+</div>
+<div class="paragraph">
+<p>4)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">void setup() {
+    // assume the data is in a file called filename.txt
+    String[] lines = loadStrings("filename.txt");
+    for (int i = 0; i &lt; lines.length; i++) {
+        String line = lines[i];
+        String[] tokens = line.split(",");
+        String name = tokens[0];
+        int score = int(tokens[1]);
+        String powerUp = tokens[2];
+        String type = tokens[2];
+        println(name, score, powerUp, type);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>5) O(N) because the time needed to parse each line increases linearly with the number of lines in our file. The number of lines determines the size of our input.</p>
+</div>
+<div class="paragraph">
+<p>6) T, F, T</p>
+</div>
+<div class="paragraph">
+<p>7) logN<sub>2</sub>(1 million)</p>
+</div>
+<div class="paragraph">
+<p>8) 1 million steps</p>
+</div>
+<div class="paragraph">
+<p>9) Binary search only works when the list is sorted</p>
+</div>
+<div class="paragraph">
+<p>10) The function should return the index of 67, which is 9</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">0   10  5   44
+6   10  8   58
+9   10  9   67 (found!)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>11) The function should return the index of 4, but since 4 is not in the list, we would return -1.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">0   10  5   44
+0   4   2   14
+0   1   0   10
+0   -1          (not found!)</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>12) This algorithm is the same as the inner loop of selection sort</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">int indexOfSmallest(int[] ls) {
+   int smallest = 0;
+   for (int i = 0; i &lt; ls.length; i++) {
+       if (ls[i] &lt; ls[smallest]) {
+           smallest = i;
+       }
+   }
+   return smallest;
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>13)  O(+N<sup>2</sup>), O(log+<sub>2</sub>(N)), O(N)</p>
+</div>
+<div class="paragraph">
+<p>14) linear search</p>
+</div>
+<div class="paragraph">
+<p>15) Compute the answer on paper but then run the code the check!</p>
+</div>
+<div class="paragraph">
+<p>16)</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">initial: 17,4,19,3,11,8
+swap 1: 3,4,19,17,11,8
+swap 2: 3,4,19,17,11,8
+swap 3: 3,4,8,17,11,19</code></pre>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2021-02-22 20:36:36 -0500
+</div>
+</div>
+</body>
+</html>

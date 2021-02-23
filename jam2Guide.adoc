@@ -1,0 +1,343 @@
+include::header.adoc[]
+
+:title: Jam 2: Study Guide
+:Author Initials: ASN
+:Date:    2020-08-15
+:Revision: 0.1
+
+= {title}
+
+Jams are open book. 40 minutes in lab.
+
+Topics:
+
+This quiz includes the previous topics from Quiz 1 plus
+* Conditional statements: `if`/`else`
+* Logical and relational operators: `&&`, `||`, `!`, `<=`, `>=`, `>`, `<` , `==`
+* Arithmetic operators: `+`, `-`, `*`, `/`, `++`, `--`, `+=` , `-=`, `*=`, `/=`
+* Accumulator variable pattern
+* The empty string: `""`
+
+= Practice questions
+
+1) What is the **value** and **type** for each of the following
+expressions? 
+
+- `2 + 3`
+- `2*3.0`
+- `2.0 + 3`
+- `6/10`
+- `6/10.0`
+- `5 - 2 * 3`
+- `"12"`
+- `2.0`
+- `2+4*2+1`
+- `"I love " + "CS"`
+
+2) Given the following variables, what is the **value** and **type** for each of the following expressions? 
+
+[source,java]
+----
+int x = 5;
+int y = 13;
+String message = "cat!";
+boolean Done = false;
+----
+
+** `x < 10 && y < 10`
+** `x < 10 || y < 10`
+** `x < 10 && x > 0`
+** `x > 10 || x < 0`
+** `(5/x) > 7.0`
+** `message == "cats"`
+** `!Done`
+** `Done || (x < 6 && y > 10)`
+
+//-
+3) Consider the following program
+
+[source,python]
+----
+int x = 3;
+void setup() {
+}
+
+void draw() {
+  if (x > 0) {
+    x = x / 2;
+  } 
+  else {
+    x = ( 3*x + 1 ) / 2;
+  }
+  println("Frame: " + frameCount + " The answer is " + x); // trace variables here
+}
+----
+
+* What is the output of this program on the first frame? 
+* Create a table having columns for `frameCount`, `x > 0`, and `x` and trace the values 
+of these variables for the first three draw calls (show their values for the `println()` statement). 
+
+4) Write a program that draws square if a random number (between 0 and 100) is less than 30 
+and draws an ellipse otherwise.
+
+5) Write a program that draws square if the user pressed 's', a triangle if the user pressed 't', 
+and a blank screen if the user presses any other key. 
+
+6) Write a program that animates a ball to go from the bottom left of the screen to the top right.
+
+7) Write a program in which a shape starts at full opacity and fades to invisible.
+
+8) Consider the following code 
+
+[source,java]
+----
+String colorName = "purple";
+
+void setup() {
+  if (colorName != "red") {
+    println(colorName + " is not primary");
+  }
+  else if (colorName != "blue") {
+    println(colorName + " is not primary");
+  }
+  else if (colorName != "yellow") {
+    println(colorName + " is not primary");
+  }
+  else {
+    println(colorName + " is primary");
+  }
+}
+----
+
+* Draw a decision diagram corresponding to this if statement.
+* What does the above code print when 
+** `colorName = "purple"`? 
+** `colorName = "red"`?
+** `colorName = "yellow"`? 
+
+9) Consider the following code 
+
+[source,java]
+----
+float diameter = random(0,500);
+void setup() {
+  size(500,500);
+
+  if (diameter < 100) {
+    ellipse( 50,  50, diameter, diameter);
+    ellipse(450, 450, diameter, diameter);
+  } 
+  else {
+    ellipse( 250,  250, diameter, diameter);
+  }
+}
+----
+
+* What range of values can the variable diameter take on? 
+* What image would be drawn if diameter has value 2?
+* What image would be drawn is diameter has value 300?
+
+10) Consider the following program
+
+[source,java]
+----
+void setup() {
+  size(600,400);
+}
+
+void draw() {
+  background(255);
+  if (mouseX < 100) {
+    ellipse( 50, 100, mouseX, mouseX*2);
+    ellipse(550, 300, mouseX, mouseX*2);
+  } 
+  else {
+    ellipse( 300,  200, mouseX, 400);
+  }
+}
+----
+
+* What range of values can `mouseX` take on?
+* What range of values can `mouseY` take on?
+* What image would be drawn if mouseX has value 50?
+* What image would be drawn if mouseX has value 300?
+* Could the above code generate the following image? Why or why not?
+
+[.thumb]
+image::Q2-wrong.png[width=200px]
+
+
+= Answers
+
+The most effective way to study is to attempt the questions on your own without 
+looking at the answers first. 
+
+1)
+
+- `2 + 3` (5, int)
+- `2*3.0` (6.0, float)
+- `2.0 + 3` (5.0, int)
+- `6/10` (0 int)
+- `6/10.0` (0.6, float)
+- `5 - 2 * 3` (-1, int)
+- `"12"` ("12", String)
+- `2.0` (2.0, float)
+- `2+4*2+1` (11, int)
+- `"I love " + "CS"` ("I love CS", String)
+
+2)
+
+----
+int x = 5;
+int y = 13;
+String message = "cat!";
+boolean Done = false;
+----
+
+- `x < 10 && y < 10` (false, boolean)
+- `x < 10 || y < 10` (true, boolean)
+- `x < 10 && x > 0` (true, boolean)
+- `x > 10 || x < 0` (false, boolean)
+- `(5/x) > 7.0` (false, boolean)
+- `message == "cats"` (false, boolean)
+- `!Done` (true, boolean)
+- `Done || (x < 6 && y > 10)` (true, boolean)
+
+3a) The first time `draw()` is called, we print "Frame 1 The answer is 1". One 
+tricky detail is that `frameCount` is 0 in `setup()` and 1 on the first `draw()` call.
+The best way to check is to run the program.
+
+3b) The question asked to trace the variables in draw(), so this yields
+|===
+|frameCount | x > 0 | x
+|1 | true | 1 (result of 3/2)
+|2 | true | 0 (result of 1/2)
+|3 | true | 0 (result of 0/2)
+|===
+
+If we traced the variable from the beginning of the program, we would get
+|===
+|frameCount | x > 0 | x
+|0 | true | 3 (result of variable initialization)
+|1 | true | 1 (result of 3/2)
+|2 | true | 0 (result of 1/2)
+|3 | true | 0 (result of 0/2)
+|===
+
+
+4) Write a program that draws square if a random number between 0 and 100 is less than 30 and draws an ellipse otherwise.
+
+[source,java]
+----
+void setup() {
+  size(500,500); 
+  int number = random(0,100); 
+  if (number < 30) { 
+    rect(20,30, 100, 400); 
+  }
+  else {
+    ellipse(200,300, 100, 400); 
+  }
+}
+----
+
+Notes:
+
+* The canvas sizes and shape parameters can be anything
+* The types of shapes must be correct inside the if statement 
+* The parameters passed to random are important
+* The `if` condition is important
+* In general, the program should implement anything that is explicitly mentioned in the question.
+Other details can be anything.
+
+5) Write a program that draws square if the user pressed 's', a triangle is the user pressed 't', and a blank screen if the user presses any other key.
+
+[source,java]
+----
+void setup() {
+  size(500,500);
+}
+
+void draw() {
+  if (key == 's') {
+    rect(20,30, 100, 400);
+  }
+  else if (key == 't') {
+    triangle(10, 20, 100, 400, width, 0); 
+  }
+}
+----
+
+6) Write a program that animates a ball to go from the bottom left of the screen to the top right.
+
+[source,java]
+----
+float x = 0;
+float y = 0;
+void setup() {
+  size(500,500);
+  y = height; 
+}
+
+void draw() {
+  background(255); 
+  ellipse(x, y, 100, 100); 
+  x += 10; 
+  y -= 10; 
+}
+----
+
+Notes:
+
+* You could also hard-code `y` to 500 during initialization
+* Background color is not important, but clearing the screen is important for the animation effect
+* Adding a value to x is important for rightwards movement
+* Subtracting a value to y is important for upwards movement
+* (Less important) To easily achieve a perfect diagonal, define a square canvas and make the x and y change by the same amount
+
+7) Write a program in which a shape starts at full opacity and fades to invisible.
+
+[source,java]
+----
+float alpha = 255;
+void setup() {
+  size(500,500);
+}
+
+void draw() {
+  background(255); 
+  fill(255,0,255, alpha); 
+  ellipse(100, 100, 100, 100); 
+  alpha--; 
+}
+----
+
+Notes:
+
+* Clearing the screen is important for the effect to work
+* The color can be anything except white (so we can see the color change) and must include an alpha value
+* You can decrement alpha by any (small) amount
+
+8a) You should draw this using diamonds for each condition, paths leading out for "true" and "false" and squares for statement blocks. See the lecture worksheet for examples.
+
+8b) 
+
+* "purple is not primary"
+* "red is not primary"
+* "yellow is not primary"
+
+9a) Diameter values are in range [0, 500). This notation means the last value 500 is not returned by this call.
+
+9b) You should draw this for the quiz. Your answer should have a tiny circle in the top left and bottom right of the screen.
+
+9c) You should draw a picture. Your answer would have a large circle in the middle of the screen.
+
+10a) mouseX is in range [0,600]
+
+10b) mouseY is in range [0, 400]
+
+10c) You should draw a picture with an ellipse in the top left and the bottom right. The ellipse should be taller than it is wide.
+
+10d) You should draw a picture with a single ellipse in the middle of the canvas. It should be slightly taller than it is wide.
+
+10e) No, because when there are two ellipses (e.g. mouseX < 100), the ellipse is always twice as tall as it is wide.
