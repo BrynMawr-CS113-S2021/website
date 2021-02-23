@@ -5,7 +5,8 @@ include::header.adoc[]
 :Date:    2020-08-15
 :Revision: 0.1
 
-= {title}
+= {title}:w
+
 
 Jams are open book. 40 minutes in lab.
 
@@ -17,6 +18,9 @@ This quiz includes the previous topics from Jam 1-2 plus
 * `sin` and `cos`
 * functions: defining and calling, return types, return statements, parameters (aka arguments)
 * scope of a variable
+
+Write Java programs to check your answers. Or you can ask a TA or instructor 
+to give feedback on your responses.
 
 = Practice questions
 

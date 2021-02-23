@@ -27,6 +27,9 @@ General quiz self-assessment:
 * Can you read and understand code? Could you spot errors? Can you trace the execution and deduce the values for all variables?
 * Can you write code which solves a given problem? Can you solve it in different ways? For example, if a question asks you to use a function, can you solve the problem using a function?
 
+Write Java programs to check your answers. Or you can ask a TA or instructor 
+to give feedback on your responses.
+
 = Practice questions
 
 1) Loop practice. Can you write loops in `main` which produce the following console output?

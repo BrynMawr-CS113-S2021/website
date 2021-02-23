@@ -18,6 +18,9 @@ This quiz includes the previous topics from Jam 1 plus
 * Accumulator variable pattern
 * String comparisons, the empty string: `""`
 
+Write Java programs to check your answers. Or you can ask a TA or instructor 
+to give feedback on your responses.
+
 = Practice questions
 
 1) What is the **value** and **type** for each of the following
