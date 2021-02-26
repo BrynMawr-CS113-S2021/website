@@ -15,7 +15,7 @@ The goals of this assignment are:
 * Work with boolean types
 * Work with both command line arguments and interactive input 
 
-:stem:
+:stem: latexmath
 :sectnums:
 
 = What are the hours?
@@ -50,7 +50,7 @@ A [Pythagorean triple](https://en.wikipedia.org/wiki/Pythagorean_triple) is a
 set of three positive integers *a*, *b*, and *c* such that the sum of the
 squares of two of the numbers equals the square of the third. i.e.
 
-$a^2 + b^2 = c^2$
+latexmath:[a^2 + b^2 = c^2]
 
 In this example, *a* and *b* represent the shorter sides of a right triangle and
 *c* represents the hypotenuse.
@@ -125,8 +125,7 @@ Enter speed limit: **55**
 Enter clocked speed: **58**
 
 Motorist is over the limit by 3 mph
-
-Total fine is: $35.00
+Total fine is: $35.0
 
 $ **java Speeding**
 
@@ -135,9 +134,9 @@ Enter clocked speed: **63**
 
 Motorist is over the limit by 8 mph
 
-Base fine is: $35.00
+Base fine is: $35.0
 Additional $2 per 3 miles in excess of 5 mph over limit
-Total fine is: $41.00
+Total fine is: $41.0
 
 $ **java Speeding**
 
@@ -146,7 +145,7 @@ Enter clocked speed: **69**
 
 Motorist is over the limit by 4 mph
 
-Total fine is: $42.50
+Total fine is: $42.5
 ----
 
 
