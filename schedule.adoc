@@ -36,6 +36,7 @@
 * link:asst01.html[Assignment 1]: *Due Feb 26*
 * Lab: Course check-ins
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6b321db9-ca0d-4c57-a77c-acd8013caa1c[Lecture 2/23/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=152e8cf5-c9cd-41d5-aa9b-acdb013aa554[Lecture 2/26/2021]
 * link:jam1Guide.html[Jam 1 Study Guide]
 
 //-----------------------------
@@ -59,25 +60,26 @@
 //-----------------------------
 |5
 | March 16,19
-|*File IO and strings redux* anchor:strings[]
-
-* Read: Sedgewick and Wayne, Sec 1.5 
-* link:asst04.html[Assignment 4]: *Due March 19*
-* Code Jam II: Conditionals and loops
-
-//-----------------------------
-|6
-| March 23,26
 |*Functions* anchor:functions1[]
 
 * Read: Sedgewick and Wayne, Sec 2.1
 * link:asst05.html[Assignment 5]: *Due March 26*
+* Code Jam II: Conditionals and loops
+
+
+//-----------------------------
+|6
+| March 23,26
+|*File IO and strings redux* anchor:strings[]
+
+* Read: Sedgewick and Wayne, Sec 1.5 
+* link:asst04.html[Assignment 4]: *Due March 19*
 * Presentations II: Conditionals and loops
 
 //-----------------------------
 |7
 | April 2 (Spring Pause)
-|*Midterm (Given in lecture, open book/computer)* anchor:functions2[]
+|
 
 * *LABS CANCELLED THIS WEEK!*
 * *NO ASSIGNMENT!*
@@ -89,7 +91,7 @@
 
 * Read: Sedgewick and Wayne, Sec 3.1
 * link:asst06.html[Assignment 6]: *Due April 9*
-* Code Jam III: Arrays, strings, advanced IO
+* Midterm (Tuesday, in lecture, open book/computer)
 
 //-----------------------------
 |9
@@ -98,7 +100,7 @@
 
 * Read: Sedgewick and Wayne, Sec 3.2
 * link:asst07.html[Assignment 7]: *Due April 16*
-* Presentations III: Arrays, strings, advanced IO
+* Code Jam III: Arrays, strings, advanced IO
 
 //-----------------------------
 |10
@@ -107,7 +109,7 @@
 
 * Read: Sedgewick and Wayne, Sec 4.2
 * link:asst08.html[Assignment 8]: *Due April 23*
-* Code Jam IV: Functions and Objects
+* Presentations III: Arrays, strings, advanced IO
 
 //-----------------------------
 |11
@@ -116,7 +118,7 @@
 
 * Read: Sedgewick and Wayne, Sec 4.2
 * link:asst09.html[Assignment 9]: *Due April 30*
-* Presentations IV: Functions and Objects
+* Code Jam IV: Functions and Objects
 
 //-----------------------------
 |12
@@ -124,7 +126,7 @@
 |*Recursion* anchor:recursion[]
 
 * Read: Sedgewick and Wayne, Sec 2.3
-* Lab: Office Hours
+* Presentations IV: Functions and Objects
 
 //-----------------------------
 |13

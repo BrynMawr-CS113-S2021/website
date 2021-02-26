@@ -56,18 +56,23 @@
 <div class="sectionbody">
 <div class="paragraph">
 <p>Implement a program <code>Hours.java</code> which inputs the number of minutes and outputs the number of hourse in
-with human friendly text.</p>
+with human friendly text. Note that when the number of hours is one, we print
+<strong>hour</strong> and not <strong>hours</strong>! When the number of minutes is one, we print <strong>minute</strong> and
+not <strong>minutes</strong>.</p>
 </div>
 <div class="listingblock">
 <div class="content">
 <pre class="highlight"><code>$ <strong>java Hours 67</strong>
-1 hours and 7 minutes
+1 hour and 7 minutes
 
 $ <strong>java Hours 453</strong>
 7 hours and 33 minutes
 
 $ <strong>java Hours 360</strong>
-6 hours and 0 minutes</code></pre>
+6 hours and 0 minutes
+
+$ <strong>java Hours 61</strong>
+1 hour and 1 minute</code></pre>
 </div>
 </div>
 <div class="paragraph">
@@ -286,8 +291,32 @@ spent on the assignment and any interesting bugs you solved.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-22 20:32:11 -0500
+Last updated 2021-02-26 16:44:31 -0500
 </div>
 </div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains('stemblock')) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
 </body>
 </html>

@@ -15,23 +15,29 @@ The goals of this assignment are:
 * Work with boolean types
 * Work with both command line arguments and interactive input 
 
+:stem:
 :sectnums:
 
 = What are the hours?
 
 Implement a program `Hours.java` which inputs the number of minutes and outputs the number of hourse in 
-with human friendly text.
+with human friendly text. Note that when the number of hours is one, we print 
+*hour* and not *hours*! When the number of minutes is one, we print *minute* and 
+not *minutes*.
 
 [source,subs="quotes"]
 ----
 $ **java Hours 67**
-1 hours and 7 minutes
+1 hour and 7 minutes
 
 $ **java Hours 453**
 7 hours and 33 minutes
 
 $ **java Hours 360**
 6 hours and 0 minutes
+
+$ **java Hours 61**
+1 hour and 1 minute
 ----
 
 You may assume that the input to the program is a positive integer, i.e. a

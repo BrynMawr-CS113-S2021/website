@@ -11,10 +11,9 @@ include::header.adoc[]
 
 [.anns]
 == Announcements
-* link:asst01.html[Assignment 1] is due on February 26
-* Topic this week: link:#if[Booleans and conditionals]
-* Labs this week will be informal check-ins over zoom 
-* We will have Code Jams in lab next week. Check out the link:jam1Guide.html[Jam 1 Study Guide] for details!
+* link:asst02.html[Assignment 2] is due on March 5 
+* Topic this week: link:#loop[Loops]
+* Labs this week will be 40 min code jams. Check out the link:jam1Guide.html[Jam 1 Study Guide] for details!
 
 == **Schedule**
 
