@@ -121,7 +121,7 @@ public class Mystery {
 public class Mystery {
     public static void main(String[] args) {
         int value = Integer.parseInt(args[0]);
-        float fraction = value / 10;
+        double fraction = value / 10;
         System.out.println("The fraction is "+fraction);
     } 
 }
@@ -134,7 +134,7 @@ public class Mystery {
 public class Mystery {
     public static void main(String[] args) {
         int value = Integer.parseInt(args[0]);
-        float fraction = value / 0;
+        double fraction = value / 0;
         System.out.println("The fraction is "+fraction);
     } 
 }
