@@ -11,9 +11,10 @@ include::header.adoc[]
 
 [.anns]
 == Announcements
-* link:asst02.html[Assignment 2] is due on March 5 
-* Topic this week: link:#loop[Loops]
-* Labs this week will be 40 min code jams. Check out the link:jam1Guide.html[Jam 1 Study Guide] for details!
+* link:asst03.html[Assignment 3] is due on March 12 
+* Topic this week: link:#arrays[Arrays and strings]
+* Labs the week of March 8 will be jam answer presentations. 
+* Labs next week will be jam 02. Check out the link:jam2Guide.html[Jam 2 Study Guide] for details!
 
 == **Schedule**
 
