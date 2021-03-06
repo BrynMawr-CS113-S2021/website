@@ -58,6 +58,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=081be417-8
 * Read: Sedgewick and Wayne, Sec 1.4 , 1.5
 * link:asst03.html[Assignment 3]: *Due March 12*
 * Presentations I: Variables and data types
+* link:jam2Guide.html[Jam 2 Study Guide]
 
 //-----------------------------
 |5

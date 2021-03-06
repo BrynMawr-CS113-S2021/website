@@ -14,7 +14,6 @@ Topics:
 
 This quiz includes the previous topics from Jam 1-2 plus
 
-* loops: for- and while-
 * `sin` and `cos`
 * functions: defining and calling, return types, return statements, parameters (aka arguments)
 * scope of a variable
