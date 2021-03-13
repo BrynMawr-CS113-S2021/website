@@ -60,6 +60,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=081be417-8
 * Presentations I: Variables and data types
 * link:jam2Guide.html[Jam 2 Study Guide]
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d7c4842-1ba4-4447-af63-ace601383027[Lecture 3/9/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f81162a5-f8b8-41fb-83ed-acea01268c04[Lecture 3/12/2021]
 
 //-----------------------------
 |5
