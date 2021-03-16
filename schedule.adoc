@@ -70,7 +70,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f81162a5-f
 * Read: Sedgewick and Wayne, Sec 2.1
 * link:asst05.html[Assignment 4]: *Due March 19*
 * Code Jam II: Conditionals and loops
-
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5655a3e6-32d9-4ffc-810a-aced012e25a7[Lecture 3/16/2021],
 
 //-----------------------------
 |6
