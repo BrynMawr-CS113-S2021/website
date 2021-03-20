@@ -19,6 +19,8 @@ The goals of this assignment are:
 
 = Menu generator
 
+_credit: Sara Mathieson_
+
 You are in charge of writing a script for the daily specials at a new restaurant
 in Swarthmore: Corner Cafe. In `Menu.java`, write a program that will ask the
 restaurant for three pieces of information: the _soup_ of the day, the _special_

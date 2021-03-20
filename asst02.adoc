@@ -46,6 +46,8 @@ whole number greater than 0.
 
 # Pythagorean Triples
 
+_credit: Sara Mathieson_
+
 A [Pythagorean triple](https://en.wikipedia.org/wiki/Pythagorean_triple) is a
 set of three positive integers *a*, *b*, and *c* such that the sum of the
 squares of two of the numbers equals the square of the third. i.e.
@@ -83,6 +85,8 @@ Not a Pythagorean triple!
 ----
 
 = Speeding fines!
+
+_credit: Lisa Meeden_
 
 Write a program called `Speeding.java` that calculates speeding fines based on the traffic laws of the state of Pennsylvania.  Here is a short description of the fine structure:
 

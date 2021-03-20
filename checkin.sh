@@ -1,6 +1,6 @@
 #! /bin/bash
 
-asciidoctor *.adoc
+asciidoctor *.adoc logs/*.adoc
 git add .
 git status
 git commit -m "update website"

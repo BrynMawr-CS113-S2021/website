@@ -181,6 +181,8 @@ You have 100 pellets left
 
 = Poll predictor
 
+_credit: Deepak Kumar_
+
 Write a program, `Predictor.java`, which predicts a candidate's likelihood of victory given its current polling number and margin of error. For example, if a poll predicts that a candidate has a 47% chance of winning a state with a 6% margin of error, can we make an overall prediction that the candidate will win a state? 
 
 One way to do this is to simulate an actual vote incorporating the margin of error. Let's say, a poll (POLL) in a state shows that a candidate is likely to receive 47% of the vote in their favor with a margin of error +/- 6% (MOE). With this information, we can do a simulation of the state's voting, and arrive at the % of votes received by the candidate in a poll:

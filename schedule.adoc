@@ -71,12 +71,14 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f81162a5-f
 * link:asst05.html[Assignment 4]: *Due March 19*
 * Code Jam II: Conditionals and loops
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5655a3e6-32d9-4ffc-810a-aced012e25a7[Lecture 3/16/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c922f43-98b6-4e58-ad87-acf10122ea8d[Lecture 3/20/2021]
 
 //-----------------------------
 |6
 | March 23,26
 |*Functions* 
 
+* Read: Sedgewick and Wayne, Sec 2.1
 * link:asst05.html[Assignment 5]: *Due March 26*
 * Presentations II: Conditionals and loops
 

@@ -216,6 +216,8 @@ retto
 
 = Letter Frequency 
 
+_credit: Deepak Kumar_
+
 Write a program, `LetterFrequency.java`, that plots the frequency of different letters in a corpus 
 of text using a link:https://en.wikipedia.org/wiki/Histogram[histogram].
 
@@ -492,4 +494,4 @@ customizations you make for your own histogram.
 
 == How to hand-in
 
-. Copy your programs to your dropbox, into the folder called `A2`. 
+. Copy your programs to your dropbox, into the folder called `A04`. 
