@@ -101,17 +101,17 @@ You implementation should have this specification:
 public static int aiTurn(char[] board)
 ----
 
-This function takes in a **list of characters** and **modifies the board** to
-reflect the AI's chosen cell (no return value). The cells are numbered 0-8,
+This function takes in a **list of characters** and determines where the AI
+should place an 'O'. The cells are numbered 0-8,
 inclusive. The choice cannot be a cell that is already taken by a symbol. 
-
-You are welcome to make an "intelligent" AI, but the recommended approach is
-to make the computer choose a cell randomly. A simple approach is to continually 
-choose random cells until it finds a free one.
 
 You can choose whether to have the function modify the board (the change will persist 
 after the function returns because arrays are *mutable*) or to modify the 
 board after the function returns to `main`, using the returned integer. 
+
+You are welcome to make an "intelligent" AI, but the recommended approach is
+to make the computer choose a cell randomly. A simple approach is to continually 
+choose random cells until it finds a free one.
 
 After the AI's turn, `main` should print the AI's choice
 

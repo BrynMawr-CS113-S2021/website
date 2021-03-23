@@ -176,19 +176,19 @@ public static int aiTurn(char[] board)</code></pre>
 </div>
 </div>
 <div class="paragraph">
-<p>This function takes in a <strong>list of characters</strong> and <strong>modifies the board</strong> to
-reflect the AI&#8217;s chosen cell (no return value). The cells are numbered 0-8,
+<p>This function takes in a <strong>list of characters</strong> and determines where the AI
+should place an 'O'. The cells are numbered 0-8,
 inclusive. The choice cannot be a cell that is already taken by a symbol.</p>
-</div>
-<div class="paragraph">
-<p>You are welcome to make an "intelligent" AI, but the recommended approach is
-to make the computer choose a cell randomly. A simple approach is to continually
-choose random cells until it finds a free one.</p>
 </div>
 <div class="paragraph">
 <p>You can choose whether to have the function modify the board (the change will persist
 after the function returns because arrays are <strong>mutable</strong>) or to modify the
 board after the function returns to <code>main</code>, using the returned integer.</p>
+</div>
+<div class="paragraph">
+<p>You are welcome to make an "intelligent" AI, but the recommended approach is
+to make the computer choose a cell randomly. A simple approach is to continually
+choose random cells until it finds a free one.</p>
 </div>
 <div class="paragraph">
 <p>After the AI&#8217;s turn, <code>main</code> should print the AI&#8217;s choice</p>
@@ -367,7 +367,7 @@ customizations you made for your game!!</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-23 10:52:07 -0400
+Last updated 2021-03-23 13:30:22 -0400
 </div>
 </div>
 <script type="text/x-mathjax-config">
