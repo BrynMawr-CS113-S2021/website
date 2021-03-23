@@ -54,7 +54,7 @@ For example, suppose the AI chooses 3, we can print the board with:
 [source]
 ----
 board[3] = 'O';
-System.out.println(Array.toString(board));
+System.out.println(java.util.Arrays.toString(board));
 ----
 
 The above code will print the following to the console:
