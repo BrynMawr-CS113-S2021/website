@@ -81,6 +81,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c922f43-9
 * Read: Sedgewick and Wayne, Sec 2.1
 * link:asst05.html[Assignment 5]: *Due March 26*
 * Presentations II: Conditionals and loops
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0f85c2c2-2013-405b-b7fd-acf4013f4a21[Lecture 3/23/2021],
+
 
 //-----------------------------
 |7
