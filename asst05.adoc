@@ -8,6 +8,7 @@ include::header.adoc[]
 = {title}
 
 **Due Friday, March 26, before midnight**
+**DEADLINE EXTENDED to Sunday, March 28, midnight**
 
 The goals of this assignment are:
 
