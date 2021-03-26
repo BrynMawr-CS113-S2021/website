@@ -82,7 +82,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c922f43-9
 * link:asst05.html[Assignment 5]: *Due March 26*
 * Presentations II: Conditionals and loops
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0f85c2c2-2013-405b-b7fd-acf4013f4a21[Lecture 3/23/2021],
-
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6fba-445f-adf6-acf7012f73bf[Lecture 3/26/2021]
 
 //-----------------------------
 |7
