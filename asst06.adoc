@@ -208,7 +208,7 @@ Try adding your own songs and flair!
 
 = What to hand-in
 
-. The programs, `Jukebox.java`, `Song.java`, and `SongLibrary.java`
+. The programs, `SoundBoard.java`, `Sound.java`, and `SoundLibrary.java`
 . Make sure your programs have a header containing your name, date, and description.
 . A brief write-up containing your name, assignment number, and a few sentences about how long you 
 spent on the assignment and any interesting bugs you solved. 
