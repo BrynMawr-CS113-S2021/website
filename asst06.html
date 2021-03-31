@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<title>Assignment 6: Video game</title>
+<link rel="stylesheet" href="style/cs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_assignment_6_video_game">Assignment 6: Video game</a></li>
+<li><a href="#_star_map">Star Map</a></li>
+<li><a href="#_requirements">Requirements</a></li>
+<li><a href="#_what_to_hand_in">What to hand-in</a>
+<ul class="sectlevel2">
+<li><a href="#_how_to_hand_in">How to hand-in</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_assignment_6_video_game">Assignment 6: Video game</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><strong>Due Friday, April 16, before midnight</strong></p>
+</div>
+<div class="paragraph">
+<p>The goals of this assignment are:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Work with functions, classes, and objects</p>
+</li>
+<li>
+<p>Work with loops, conditionals, and variables</p>
+</li>
+<li>
+<p>Work with arrays and strings</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_star_map">Star Map</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p><em>credit: data is from <a href="http://nifty.stanford.edu/2009/reid-starmap/starmap.html">here</a></em></p>
+</div>
+<div class="paragraph">
+<p>Write a program, <code>StarMap.java</code>, that visualizes the stars and constellations from a file.
+You program should implement two helper classes <code>Star.java</code> and <code>Constellation.java</code>.</p>
+</div>
+<div class="paragraph">
+<p>This program opens a draw window and accepts console Input.</p>
+</div>
+<div class="paragraph">
+<p>TODO: Sample output</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_requirements">Requirements</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>1) Define a class, called <code>Star</code>, to represent each star on the map</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Star</code> contains the following data:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>x coordinate (float between 0 and 1000)</p>
+</li>
+<li>
+<p>y coordinate (float between 0 and 1000), and</p>
+</li>
+<li>
+<p>brightness (float between 0 and 1.0, where 1.0 is most bright and 0.0 is dim)</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>Star</code> contains the two methods:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>constructor with parameters for x, y, and brightness</p>
+</li>
+<li>
+<p>draw method. In the picture above, brighter stars are bigger and have a brighter color.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>2) Define a class, called <code>Constellation</code>, to represent each constellation line on the map.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>Constellation</code> contains the following data:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>name of the constellation (String)</p>
+</li>
+<li>
+<p>starting x coordinate (float between 0 and 1000)</p>
+</li>
+<li>
+<p>starting y coordinate (float between 0 and 1000),</p>
+</li>
+<li>
+<p>ending x coordinate (float between 0 and 1000),</p>
+</li>
+<li>
+<p>ending y coordinate (float between 0 and 1000),</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><code>Constellation</code> contains the following methods:</p>
+<div class="ulist">
+<ul>
+<li>
+<p>constructor with parameters for name, and the starting and ending points</p>
+</li>
+<li>
+<p><code>draw</code> method. This function should draw a line between the starting and ending points.</p>
+</li>
+<li>
+<p><code>getName</code> method. This method should return the name of the constellation.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>3) In <code>main</code>, open and parse the file, <code>stars.txt</code>. Create a Star object for each line in the file. Store the Star objects in an array.</p>
+</div>
+<div class="paragraph">
+<p>4) In <code>main</code>, open and parse the file, <code>constellations.txt</code>. Create a Constellation object for each line in the file. Store the Constellation objects in an array.</p>
+</div>
+<div class="paragraph">
+<p>5) In <code>main</code>, implement a console interface for the user. If the user enters the name of a constellation on the map, highlight that constellation.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_what_to_hand_in">What to hand-in</h2>
+<div class="sectionbody">
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>The program, <code>StarMap.java</code>, along with helper classes, <code>Star.java</code>, and <code>Constellation.java</code></p>
+</li>
+<li>
+<p>Images of the star map, made by your program.</p>
+</li>
+<li>
+<p>Make sure your programs have a header containing your name, date, and description.</p>
+</li>
+<li>
+<p>A brief write-up containing your name, assignment number, and a few sentences about how long you
+spent on the assignment and any interesting bugs you solved.</p>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="_how_to_hand_in">How to hand-in</h3>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Copy your files to your dropbox, into the folder called <code>A06</code>.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2021-03-30 16:03:14 -0400
+</div>
+</div>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  messageStyle: "none",
+  tex2jax: {
+    inlineMath: [["\\(", "\\)"]],
+    displayMath: [["\\[", "\\]"]],
+    ignoreClass: "nostem|nolatexmath"
+  },
+  asciimath2jax: {
+    delimiters: [["\\$", "\\$"]],
+    ignoreClass: "nostem|noasciimath"
+  },
+  TeX: { equationNumbers: { autoNumber: "none" } }
+})
+MathJax.Hub.Register.StartupHook("AsciiMath Jax Ready", function () {
+  MathJax.InputJax.AsciiMath.postfilterHooks.Add(function (data, node) {
+    if ((node = data.script.parentNode) && (node = node.parentNode) && node.classList.contains('stemblock')) {
+      data.math.root.display = "block"
+    }
+    return data
+  })
+})
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_HTMLorMML"></script>
+</body>
+</html>

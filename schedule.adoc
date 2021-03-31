@@ -68,7 +68,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f81162a5-f
 |*Functions* anchor:functions1[]
 
 * Read: Sedgewick and Wayne, Sec 2.1
-* link:asst05.html[Assignment 4]: *Due March 19*
+* link:asst04.html[Assignment 4]: *Due March 19*
 * Code Jam II: Conditionals and loops
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5655a3e6-32d9-4ffc-810a-aced012e25a7[Lecture 3/16/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c922f43-98b6-4e58-ad87-acf10122ea8d[Lecture 3/20/2021]
@@ -97,9 +97,9 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6
 | April 6,9
 |*Object oriented programming: using objects* anchor:objects1[]
 
+* **Midterm (Tuesday, in lecture, open book/computer)**
 * Read: Sedgewick and Wayne, Sec 3.1
-* link:asst06.html[Assignment 6]: *Due April 9*
-* Midterm (Tuesday, in lecture, open book/computer)
+* No labs, no assignment this week 
 
 //-----------------------------
 |9
@@ -107,7 +107,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6
 |*Objects oriented programming: creating objects* anchor:objects2[]
 
 * Read: Sedgewick and Wayne, Sec 3.2
-* link:asst07.html[Assignment 7]: *Due April 16*
+* link:asst06.html[Assignment 6]: *Due April 16*
 * Code Jam III: Arrays, strings, advanced IO
 
 //-----------------------------
@@ -116,7 +116,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6
 |*Search* anchor:search[]
 
 * Read: Sedgewick and Wayne, Sec 4.2
-* link:asst08.html[Assignment 8]: *Due April 23*
+* link:asst07.html[Assignment 7]: *Due April 23*
 * Presentations III: Arrays, strings, advanced IO
 
 //-----------------------------
@@ -125,7 +125,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6
 |*Sort* anchor:sort[]
 
 * Read: Sedgewick and Wayne, Sec 4.2
-* link:asst09.html[Assignment 9]: *Due April 30*
+* link:asst08.html[Assignment 8]: *Due April 30*
 * Code Jam IV: Functions and Objects
 
 //-----------------------------
@@ -134,6 +134,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6
 |*Recursion* anchor:recursion[]
 
 * Read: Sedgewick and Wayne, Sec 2.3
+* link:asst09.html[Assignment 9]: *Due May 11*
 * Presentations IV: Functions and Objects
 
 //-----------------------------
@@ -142,6 +143,5 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6
 |*Designing larger programs* anchor:design[]
 
 * Read: Sedgewick and Wayne, Sec 3.3, Sec 2.2
-* link:asst10.html[Assignment 10]: *Due May 11*
 
 |===

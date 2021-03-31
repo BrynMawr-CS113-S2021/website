@@ -11,9 +11,10 @@ include::header.adoc[]
 
 [.anns]
 == Announcements
-* link:asst05.html[Assignment 5] is due on March 26
-* Topic this week: link:#functions2[Functions]
-* We will have presentations in lab this week. 
+* *Midterm* will be during lecture on April 6
+* *No Labs* on April 6 and April 9!
+* Topic this week: link:#objects[Objects]
+* link:asst06.html[Assignment 6] is due on April 16th
 
 == **Schedule**
 

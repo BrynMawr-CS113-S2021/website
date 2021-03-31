@@ -14,14 +14,14 @@
 <div id="toc" class="toc2">
 <div id="toctitle">Table of Contents</div>
 <ul class="sectlevel1">
-<li><a href="#_jam_3_study_guidew">Jam 3: Study Guide:w</a></li>
+<li><a href="#_jam_3_study_guide">Jam 3: Study Guide</a></li>
 <li><a href="#_practice_questions">Practice questions</a></li>
 </ul>
 </div>
 </div>
 <div id="content">
 <div class="sect1">
-<h2 id="_jam_3_study_guidew">Jam 3: Study Guide:w</h2>
+<h2 id="_jam_3_study_guide">Jam 3: Study Guide</h2>
 <div class="sectionbody">
 <div class="paragraph">
 <p>Jams are open book. 40 minutes in lab.</p>
@@ -35,13 +35,19 @@
 <div class="ulist">
 <ul>
 <li>
-<p><code>sin</code> and <code>cos</code></p>
-</li>
-<li>
 <p>functions: defining and calling, return types, return statements, parameters (aka arguments)</p>
 </li>
 <li>
+<p>function stack, function execution</p>
+</li>
+<li>
 <p>scope of a variable</p>
+</li>
+<li>
+<p>arrays: defining and indexing</p>
+</li>
+<li>
+<p>Strings: <code>chatAt</code>, <code>compareTo</code>, <code>length</code></p>
 </li>
 </ul>
 </div>
@@ -55,11 +61,7 @@ to give feedback on your responses.</p>
 <h2 id="_practice_questions">Practice questions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>4) Write a function that inputs a month as an integer and returns a string name for that month. For example,
-if we call the function with the number 1, the function should return "January". Call your function from setup() for each month of the year (use a loop) and print the results to the console.</p>
-</div>
-<div class="paragraph">
-<p>5) Consider the following loop</p>
+<p>1) Consider the following loop</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -83,7 +85,77 @@ System.out.println("Enter your pin: "+pin);</code></pre>
 </ul>
 </div>
 <div class="paragraph">
-<p>7) Consider the following program</p>
+<p>2) Write a function, <code>Pow</code>, that raises any number X to a power Y, using a loop.
+Your function should match the following specification.
+In your program, use <code>main</code> to call and test your function.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>// Function: Pow
+// Description: Computes X to the power Y
+// Input X (double), the number to raise to a power
+// Input Y (double), the exponent
+// Returns (double), the quantity X^Y</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>3) Write a function, <code>Average</code>, that takes an array of doubles as input and
+returns the average value based on the specification below. In your program,
+use <code>main</code> to call and test your function using random values in the range
+[-5, 5).</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code>// Function: Average
+// Description: Computes the average value in a list of numbers
+// Input data (double[]), the numbers to average
+// Returns (double), the average value, or 0 if the size of data is 0
+
+public static void main(String[] args)
+{
+  double[] values = new double[5];
+  // todo - initialize values with random values in range [-5,5)
+  // todo - call average and print the result
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>4) Write a function, <code>CountLetter</code>, which counts the number of times a character
+occurs in a String. Implement tests in <code>main</code> to check your function. For example,</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>CountLetter("elephant",'e')</code> should return 2.</p>
+</li>
+<li>
+<p><code>CountLetter("zebra", 'z')</code> should return 1.</p>
+</li>
+<li>
+<p><code>CountLetter("elephant", 'z')</code> should return 0.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>5) Write a function, <code>IsEvenLength</code>, which returns <code>True</code> if the given String has an
+even number of characters and <code>False</code> otherwise. Implement tests in <code>main</code> to check your
+answer. For example,</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><code>IsEvenLength("cat")</code> returns False</p>
+</li>
+<li>
+<p><code>IsEvenLength("")</code> returns True</p>
+</li>
+<li>
+<p><code>IsEvenLength("a")</code> returns False</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>6) Consider the following program</p>
 </div>
 <div class="listingblock">
 <div class="content">
@@ -112,31 +184,37 @@ System.out.println("Enter your pin: "+pin);</code></pre>
 <div class="ulist">
 <ul>
 <li>
-<p>Show the function stack starting at <code>setup()</code> and ending with the comment labeled (a).</p>
+<p>On the line labeled (a), what functions are in the function stack? List the contents of the stack with the oldest contents at the top, same as on <a href="http://www.pythontutor.com/java.html#mode=edit">Java tutor</a></p>
 </li>
 <li>
-<p>Show the function stack starting at <code>setup()</code> and ending with the comment labeled (b).</p>
+<p>On the line labeled (b), what functions are in the function stack?</p>
 </li>
 <li>
-<p>What global variables are used by this program?</p>
+<p>What local variables are defined in mystery2?</p>
 </li>
 <li>
-<p>What are the parameters to mystery1?</p>
+<p>What local variables are defined in mystery1?</p>
 </li>
 <li>
-<p>What variables are in scope in setup?</p>
+<p>What parameters are defined in mystery1?</p>
 </li>
 <li>
-<p>What variables are in scope in function mystery1?</p>
+<p>What is the return type of mystery1?</p>
+</li>
+<li>
+<p>What is the return type of mystery2?</p>
+</li>
+<li>
+<p>What variables are in scope in main?</p>
+</li>
+<li>
+<p>What variables are in scope in mystery1?</p>
 </li>
 <li>
 <p>What variables are in scope in mystery2?</p>
 </li>
 <li>
 <p>What is the console output of this program?</p>
-</li>
-<li>
-<p>What text is drawn to the canvas?</p>
 </li>
 </ul>
 </div>
@@ -145,7 +223,7 @@ System.out.println("Enter your pin: "+pin);</code></pre>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-03-06 12:40:16 -0500
+Last updated 2021-03-30 14:50:02 -0400
 </div>
 </div>
 </body>
