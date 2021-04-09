@@ -126,3 +126,29 @@ class Mystery {
 * What variables are in scope in mystery1?
 * What variables are in scope in mystery2?
 * What is the console output of this program?
+
+7) Implement a Movie class. Movie should contain the following data and methods
+
+[source,java]
+----
+// Data
+
+// Title (string)
+// Duration in minutes (float)
+// Year (integer)
+// actors (array of String) 
+
+// Methods
+
+// Constructor 
+// Input: Title (string)
+// Input: Duration in minutes (float)
+// Input: Year (integer)
+// Input: actors (array of String) 
+
+// Accessor for title
+// Mutator for title 
+----
+
+Test your Movie class. Create a Movie object for "The Shining" which was made in 1980, is 
+2 hours and 26 minutes long, and stars Jack Nicholson and Shelley Duval. Create your object in `setup()`
