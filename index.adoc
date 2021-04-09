@@ -11,10 +11,9 @@ include::header.adoc[]
 
 [.anns]
 == Announcements
-* *Midterm* will be during lecture on April 6
-* *No Labs* on April 6 and April 9!
 * Topic this week: link:#objects[Objects]
 * link:asst06.html[Assignment 6] is due on April 16th
+* Code jams in labs. See link:jam3Guide.html[Jam 3 Guide] for sample questions
 
 == **Schedule**
 
