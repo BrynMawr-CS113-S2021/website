@@ -34,9 +34,9 @@ view past turns.
 
 We are also using a deck of "bird" cards.
 
-- link:mg-ex1.html[Example 1]
-- link:mg-ex2.html[Example 2]
-- link:mg-ex3.html[Example 3]
+- link:logs/mg-ex1.html[Example 1]
+- link:logs/mg-ex2.html[Example 2]
+- link:logs/mg-ex3.html[Example 3]
 
 You have some freedom in how you want your game to look. Here are our
 requirements for the full program:
@@ -156,7 +156,7 @@ Below is pseudocode.
 
 [source]
 ----
-for i = 0; i < numshuffles; i++
+for (i = 0; i < numshuffles; i++)
   idx1 = choose a random index
   idx2 = choose a random index
   swap the cards at idx1 and idx2
@@ -171,7 +171,7 @@ than 10 characters are padded on the left with spaces:
 
 [source]
 ----
-String[] names = {"jeffrey", "lisa", "aline", "0123456789"};
+String[] names = {"apple", "orange", "cupcake", "0123456789"};
 for (int i = 0; i < names.length; i++) {
   System.out.printf("===%10s===" , names[i]);
 }
@@ -181,9 +181,9 @@ Produces this output
 
 [source]
 ----
-===   jeffrey===
-===      lisa===
-===     aline===
+===     apple===
+===    orange===
+===   cupcake===
 ===0123456789===
 ----
 
