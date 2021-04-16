@@ -190,11 +190,11 @@ Produces this output
 == Recommended functions
 
 You have some flexibility in how you implement the functions in `MemoryGame.java`. 
-However, we recommend you functions match the psuedocode given for `main`.
+However, we recommend your functions match the psuedocode given for `main`. For example, 
 
 * `public static void printWelcome()`: Prints the welcome message at the start of the game
-* `public static Card[] initCards()`: Creates an array of cards based on names
-* `public static void shuffle(Card[] cards)`: Shuffles the cards (changes `cards`)
+* `public static Card[] initCards()`: Create the array of cards based on names of birds (or whatever you like)
+* `public static void shuffle(Card[] cards)`: Shuffle the cards
 * `public static void displayCards(Card[] cards)`: Displays the cards. Hidden cards should show a number. Showing cards should show the name
 * `public static int askForCard(Card[] cards)`: Asks the user for a card and returns the index. This function should re-ask the user for input if their choice is invalid.
 * `public static boolean isValid(Card[] cards, String userInput)`: Returns false if the input is not a valid number, is out of range, or corresponds to a card that is already showing.

@@ -111,7 +111,9 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6
 * link:asst06.html[Assignment 6]: *Due April 16*
 * link:jam3Guide.html[Jam 3 Guide]
 * Code Jam III: Arrays, strings, functions, simple classes and objects
-* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d263dd06-8afe-4a55-8a89-ad09014f4061[Lecture 4/13/2021]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d263dd06-8afe-4a55-8a89-ad09014f4061[Lecture 4/13/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-67c4-4efb-be7d-ad0c013b169f[Lecture 4/16/2021]
+
 //-----------------------------
 |10
 |April 20,23
