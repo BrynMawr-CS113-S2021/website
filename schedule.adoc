@@ -117,7 +117,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-6
 //-----------------------------
 |10
 |April 20,23
-|*Search* anchor:search[]
+|*Search and sort* anchor:search[]
 
 * Read: Sedgewick and Wayne, Sec 4.2
 * link:asst07.html[Assignment 7]: *Due April 23*
@@ -126,25 +126,24 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-6
 //-----------------------------
 |11
 |April 27,30
-|*Sort* anchor:sort[]
+|*Runtime analysis and recursion* anchor:analysis[]
 
-* Read: Sedgewick and Wayne, Sec 4.2
+* Read: Sedgewick and Wayne, Sec 2.3
 * link:asst08.html[Assignment 8]: *Due April 30*
-* Code Jam IV: Functions and Objects
+* Code Jam IV: More objects and algorithms
 
 //-----------------------------
 |12
 |May 4,7
-|*Recursion* anchor:recursion[]
+|*More recursion, intro to data structures* anchor:recursion[]
 
-* Read: Sedgewick and Wayne, Sec 2.3
 * link:asst09.html[Assignment 9]: *Due May 11*
 * Presentations IV: Functions and Objects
 
 //-----------------------------
 |13
 |May 11
-|*Designing larger programs* anchor:design[]
+|*Lists and dictionaries* anchor:datastructures[]
 
 * Read: Sedgewick and Wayne, Sec 3.3, Sec 2.2
 
