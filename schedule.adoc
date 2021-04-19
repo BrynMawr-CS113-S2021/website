@@ -122,6 +122,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-6
 * Read: Sedgewick and Wayne, Sec 4.2
 * link:asst07.html[Assignment 7]: *Due April 23*
 * Presentations III: Arrays, strings, advanced IO
+* link:jam4Guide.html[Jam 4 Guide]
 
 //-----------------------------
 |11
@@ -131,6 +132,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-6
 * Read: Sedgewick and Wayne, Sec 2.3
 * link:asst08.html[Assignment 8]: *Due April 30*
 * Code Jam IV: More objects and algorithms
+* link:jam4Guide.html[Jam 4 Guide]
 
 //-----------------------------
 |12
@@ -138,13 +140,15 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-6
 |*More recursion, intro to data structures* anchor:recursion[]
 
 * link:asst09.html[Assignment 9]: *Due May 11*
-* Presentations IV: Functions and Objects
+* Presentations IV: More objects and algorithms
+* link:jam5Guide.html[Final exam guide]
 
 //-----------------------------
 |13
 |May 11
-|*Lists and dictionaries* anchor:datastructures[]
+|*ArrayList, HashMap and Dictionary* anchor:datastructures[]
 
-* Read: Sedgewick and Wayne, Sec 3.3, Sec 2.2
+* Read: Sedgewick and Wayne, Sec 4.4
+* link:jam5Guide.html[Final exam guide]
 
 |===

@@ -11,140 +11,21 @@ Jams are open book. 40 minutes in lab.
 
 *Topics:*
 
-This quiz includes the previous topics from Quiz 1-4 plus
+This quiz includes the previous topics from jams 1-4 plus
 
-* String operations: `charAt`, `length`, `replace`, `trim`, `split`, `compareTo`
-* Reading text files using `loadStrings`
-* Linear and binary search
 * Runtime analysis/big-O notation
     * O(1) -- constant time
     * O(log+++<sub>2</sub>+++N) -- logarithmic (ex: binary search)
     * O(N) -- linear (ex: linear search)
     * O(N+++<sup>2</sup>+++) -- quadratic (ex: bubble sort)
-* Selection sort and bubble sort
-* Swapping elements in an array
-* Nested loops
-
-*General quiz self-assessment:*
-
-* Can you define terms? 
-* Can you reproduce the execution of the search and sort algorithms from class without looking at a reference?
-* Can you analyze the performance as a function of its input for code involving loops and common operations?
-* Are you familiar with the Processing functions we use in class and labs?
-* Do you know the syntax for defining and using variables, if statements, loops, functions, and classes?
-* Can you read and understand code? Could you spot errors? Can you trace the execution and deduce the values for all variables?
-* Can you write code which solves a given problem? Can you solve it in different ways? For example, if a question asks you to use a function, can you solve the problem using a function?
+* Recursion
 
 Write Java programs to check your answers. Or you can ask a TA or instructor 
 to give feedback on your responses.
 
 = Practice questions
 
-1) Write a function that takes a String as an input and replaces all occurrences of the letter 
-`e` to `3` and all occurrences of the letter `s` to `5`. Test your function from `main` using the 
-phrases "elephant" and "sour patch kids".
-
-[source, java]
-----
-// Function: replaceChars
-// Input: initialString (String), the original string to modify
-// Output: (String), the modified String
-----
-
-2) Write a function that takes a String as an input and returns the reverse String.  
-
-3) What would the output of the following code be?
-
-[source,java]
-----
-for (int i = 0; i < 2; i++) 
-{
-    for (int j = 0; j < 3; j++)
-    { 
-        println("i:" + i + " j:" + j);
-    }
-}
-----
-
-4) Write code to load and parse a file with format [Name,Score,PowerUp,Role]
-[source,java]
-----
-Ressie Rask  ,3224,Mushroom,Healer
-Angelique Aust  ,1190,Mushroom,Dps
-Tiny Teamer  ,3722,Mushroom,Tank
-Michell Mancino  ,316,Tea kettle,Dps
-Amos Ackman  ,4989,Fireball,Tank
-Liz Labat  ,714,Mushroom,Healer
-Lawerence Lalonde  ,3921,Mushroom,Dps
-Madelyn Mcjunkin  ,1243,Fireball,Tank
-Echo Eckhardt  ,4831,Mushroom,Dps
-----
-
-5) What is the running time of you algorithm in the previous question?
-
-6) True/False questions:
-
-- Linear search requires a number of steps proportional to the size of the list being searched (T/F)
-- Binary search is an O(N+++<sup>2</sup>+++) algorithm (T/F)
-- The number of times N can be divided by 2 (before reaching 1) is
-  log+++<sub>2</sub>+++ N (T/F)
-
-7) How many steps would it take to do binary search on a list of size 1
-million, when the item you are searching for is NOT in the list?
-
-8) How many steps would it take to do linear search on a list of size 1
-million, when the item you are searching for is NOT in the list?
-
-9) Binary search is much faster than linear search, so why don't we use it for every search problem?
-
-10) For each iteration of the loop in `binarySearch(int x, int[] L)`, show the
-*index* values for `low`, `high`, and `mid`, and the value stored at
-location `mid`.  What will be returned by this function call?
-
-----
-int x = 67;
-int[] L = {10, 12, 14, 21, 37, 44, 45, 46, 58, 67, 99};
-            0   1   2   3   4   5   6   7   8   9  10   
-
-low | high | mid | L[mid]
-- - - - - - - - - - - - -
-    |      |     |
-    |      |     |
-    |      |     |
-    |      |     |
-----
-
-11) For each iteration of the loop in `binarySearch(int y, int[] L)`, show the
-*index* values for low, high, and mid, and the value stored at
-location mid.  What will be returned by this function call?
-
-----
-int y = 4;
-int[] L = [10, 12, 14, 21, 37, 44, 45, 46, 58, 67, 99];
-            0   1   2   3   4   5   6   7   8   9  10   
-
-low | high | mid | L[mid]
-- - - - - - - - - - - - -
-    |      |     |
-    |      |     |
-    |      |     |
-    |      |     |
-----
-
-12) Write a function to return the *index* of the smallest item in a given list.
-
-[source,java]
-----
-// Input:  An array of integers
-// Returns: The index of the smallest item in the list, 
-//    -1 if the list is empty
-
-int indexOfSmallest(int[] ls) {
-   // complete this function
-}
-----
-
-13) How many *steps* are required for each of the following? Classify each one 
+1) How many *steps* are required for each of the following? Classify each one 
 as either O(N), O(N+++<sup>2</sup>+++), O(log+++<sub>2</sub>+++ N), O(N log+++<sub>2</sub>+++ N), or O(1). 
 
 [source,java]
@@ -180,36 +61,3 @@ for (int i = 0; i < N; i++)
     }
 }
 ----
-
-14) Which algorithm requires time directly proportional to the size of the input list?
-+
-    - linear search
-    - binary search
-    - bubble sort
-    - selection sort
-+
-
-15) Consider the following function, `oneLoop(int[] L)`, which is similar to 
-the inner loop from bubble sort:
-+
-[source,java]
-----
-void oneLoop(int[] L)
-{
-   for (int j = 0; j < L.length()-1; j++) 
-   {
-      if (L[j] > L[j+1])
-      {
-         int tmp = L[j+1];
-         L[j+1] = L[j];
-         L[j] = tmp;
-      }
-   }
-}
-----
-+
-Suppose we run `oneLoop` on the list `L={17,4,19,3,11,8}`. What are
-the new contents of `L`?
-
-16) Show how the list `L={17,4,19,3,11,8}` would be changed 
-after selection sort does its first 3 swaps:

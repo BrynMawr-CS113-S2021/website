@@ -35,9 +35,6 @@
 <div class="ulist">
 <ul>
 <li>
-<p>arrays</p>
-</li>
-<li>
 <p>classes</p>
 <div class="ulist">
 <ul>
@@ -53,27 +50,17 @@
 </ul>
 </div>
 </li>
-</ul>
-</div>
-<div class="paragraph">
-<p>General quiz self-assessment:</p>
-</div>
-<div class="ulist">
-<ul>
 <li>
-<p>Can you define terms?</p>
+<p>Reading text files</p>
 </li>
 <li>
-<p>Are you familiar with the Processing functions we use in class and labs?</p>
+<p>Linear and binary search</p>
 </li>
 <li>
-<p>Do you know the syntax for defining and using variables, if statements, loops, functions, and classes?</p>
+<p>Selection sort and bubble sort</p>
 </li>
 <li>
-<p>Can you read and understand code? Could you spot errors? Can you trace the execution and deduce the values for all variables?</p>
-</li>
-<li>
-<p>Can you write code which solves a given problem? Can you solve it in different ways? For example, if a question asks you to use a function, can you solve the problem using a function?</p>
+<p>Swapping elements in an array</p>
 </li>
 </ul>
 </div>
@@ -87,106 +74,7 @@ to give feedback on your responses.</p>
 <h2 id="_practice_questions">Practice questions</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>1) Loop practice. Can you write loops in <code>main</code> which produce the following console output?</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Write a loop that prints the following sequence to the console</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre>The next number is:  -5
-The next number is:  -4
-The next number is:  -3
-The next number is:  -2
-The next number is:  -1
-The next number is:  0
-The next number is:  1
-The next number is:  2
-The next number is:  3
-The next number is:  4
-The next number is:  5</pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Write a loop that prints the following sequence to the console</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">X =  10.0
-X =  20.0
-X =  30.0
-X =  40.0
-X =  50.0
-X =  60.0
-X =  70.0
-X =  80.0
-X =  90.0</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Write a program that outputs the following to the console</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-Blast off!</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Write a program that outputs the following pattern to the console</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">*
-**
-***
-****
-*****</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Write a program that outputs a 5x5 square of asterisk to the console</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">*****
-*****
-*****
-*****
-*****</code></pre>
-</div>
-</div>
-<div class="paragraph">
-<p>2) Loop practice. Use loops to compute quantities over random numbers.</p>
+<p>1) Loop practice. Use loops to compute quantities over random numbers.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -292,45 +180,6 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 </div>
 </div>
 <div class="paragraph">
-<p>4) Class practice.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Implement a Movie class. Movie should contain the following data and methods</p>
-</li>
-</ul>
-</div>
-<div class="listingblock">
-<div class="content">
-<pre class="highlight"><code class="language-java" data-lang="java">// Data
-
-// Title (string)
-// Duration in minutes (float)
-// Year (integer)
-// actors (array of String)
-
-// Methods
-
-// Constructor
-// Input: Title (string)
-// Input: Duration in minutes (float)
-// Input: Year (integer)
-// Input: actors (array of String)
-
-// Accessor for title
-// Mutator for title</code></pre>
-</div>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Test your Movie class. Create a Movie object for "The Shining" which was made in 1980, is
-2 hours and 26 minutes long, and stars Jack Nicholson and Shelley Duval. Create your object in <code>setup()</code></p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
 <p>6) A programmer has a bug in her code. She expected compute to return 4.0 but it&#8217;s returning 3.0. What&#8217;s wrong?</p>
 </div>
 <div class="listingblock">
@@ -384,7 +233,7 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 <p>What is the output of this program?</p>
 </li>
 <li>
-<p>What local variables are in scope in <code>setup()</code>?</p>
+<p>What local variables are in scope in <code>main()</code>?</p>
 </li>
 <li>
 <p>What local variables are in scope in <code>mystery()</code>?</p>
@@ -520,12 +369,182 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>11) Write a function that takes a String as an input and replaces all occurrences of the letter
+<code>e</code> to <code>3</code> and all occurrences of the letter <code>s</code> to <code>5</code>. Test your function from <code>main</code> using the
+phrases "elephant" and "sour patch kids".</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">// Function: replaceChars
+// Input: initialString (String), the original string to modify
+// Output: (String), the modified String</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>12) Write a function that takes a String as an input and returns the reverse String.</p>
+</div>
+<div class="paragraph">
+<p>13) What would the output of the following code be?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">for (int i = 0; i &lt; 2; i++)
+{
+    for (int j = 0; j &lt; 3; j++)
+    {
+        println("i:" + i + " j:" + j);
+    }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>14) Write code to load and parse a file with format [Name,Score,PowerUp,Role]</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">Ressie Rask  ,3224,Mushroom,Healer
+Angelique Aust  ,1190,Mushroom,Dps
+Tiny Teamer  ,3722,Mushroom,Tank
+Michell Mancino  ,316,Tea kettle,Dps
+Amos Ackman  ,4989,Fireball,Tank
+Liz Labat  ,714,Mushroom,Healer
+Lawerence Lalonde  ,3921,Mushroom,Dps
+Madelyn Mcjunkin  ,1243,Fireball,Tank
+Echo Eckhardt  ,4831,Mushroom,Dps</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>15) True/False questions:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Linear search requires a number of steps proportional to the size of the list being searched (T/F)</p>
+</li>
+<li>
+<p>Binary search is an O(N<sup>2</sup>) algorithm (T/F)</p>
+</li>
+<li>
+<p>The number of times N can be divided by 2 (before reaching 1) is
+log<sub>2</sub> N (T/F)</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>16) How many steps would it take to do binary search on a list of size 1
+million, when the item you are searching for is NOT in the list?</p>
+</div>
+<div class="paragraph">
+<p>17) How many steps would it take to do linear search on a list of size 1
+million, when the item you are searching for is NOT in the list?</p>
+</div>
+<div class="paragraph">
+<p>18) Binary search is much faster than linear search, so why don&#8217;t we use it for every search problem?</p>
+</div>
+<div class="paragraph">
+<p>19) For each iteration of the loop in <code>binarySearch(int x, int[] L)</code>, show the
+<strong>index</strong> values for <code>low</code>, <code>high</code>, and <code>mid</code>, and the value stored at
+location <code>mid</code>.  What will be returned by this function call?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>int x = 67;
+int[] L = {10, 12, 14, 21, 37, 44, 45, 46, 58, 67, 99};
+            0   1   2   3   4   5   6   7   8   9  10
+
+low | high | mid | L[mid]
+- - - - - - - - - - - - -
+    |      |     |
+    |      |     |
+    |      |     |
+    |      |     |</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>20) For each iteration of the loop in <code>binarySearch(int y, int[] L)</code>, show the
+<strong>index</strong> values for low, high, and mid, and the value stored at
+location mid.  What will be returned by this function call?</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre>int y = 4;
+int[] L = [10, 12, 14, 21, 37, 44, 45, 46, 58, 67, 99];
+            0   1   2   3   4   5   6   7   8   9  10
+
+low | high | mid | L[mid]
+- - - - - - - - - - - - -
+    |      |     |
+    |      |     |
+    |      |     |
+    |      |     |</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>21) Write a function to return the <strong>index</strong> of the smallest item in a given list.</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">// Input:  An array of integers
+// Returns: The index of the smallest item in the list,
+//    -1 if the list is empty
+
+int indexOfSmallest(int[] ls) {
+   // complete this function
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>22) Which algorithm requires time directly proportional to the size of the input list?</p>
+</div>
+<div class="paragraph">
+<p>+
+    - linear search
+    - binary search
+    - bubble sort
+    - selection sort</p>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="paragraph">
+<p>23) Consider the following function, <code>oneLoop(int[] L)</code>, which is similar to
+the inner loop from bubble sort:</p>
+</div>
+<div class="paragraph">
+<p>+</p>
+</div>
+<div class="listingblock">
+<div class="content">
+<pre class="highlight"><code class="language-java" data-lang="java">void oneLoop(int[] L)
+{
+   for (int j = 0; j &lt; L.length()-1; j++)
+   {
+      if (L[j] &gt; L[j+1])
+      {
+         int tmp = L[j+1];
+         L[j+1] = L[j];
+         L[j] = tmp;
+      }
+   }
+}</code></pre>
+</div>
+</div>
+<div class="paragraph">
+<p>+
+Suppose we run <code>oneLoop</code> on the list <code>L={17,4,19,3,11,8}</code>. What are
+the new contents of <code>L</code>?</p>
+</div>
+<div class="paragraph">
+<p>24) Show how the list <code>L={17,4,19,3,11,8}</code> would be changed
+after selection sort does its first 3 swaps:</p>
+</div>
 </div>
 </div>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2021-02-23 16:03:27 -0500
+Last updated 2021-04-19 18:30:10 -0400
 </div>
 </div>
 </body>

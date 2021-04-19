@@ -13,98 +13,21 @@ Topics:
 
 This quiz includes the previous topics from Jams 1, 2 and 3 plus
 
-* arrays
 * classes
 ** defining and using classes
 ** terms: methods, member variables, accessors (getters), mutators (setters) 
 ** scope of member variables
-
-General quiz self-assessment: 
-
-* Can you define terms? 
-* Are you familiar with the Processing functions we use in class and labs?
-* Do you know the syntax for defining and using variables, if statements, loops, functions, and classes?
-* Can you read and understand code? Could you spot errors? Can you trace the execution and deduce the values for all variables?
-* Can you write code which solves a given problem? Can you solve it in different ways? For example, if a question asks you to use a function, can you solve the problem using a function?
+* Reading text files 
+* Linear and binary search
+* Selection sort and bubble sort
+* Swapping elements in an array
 
 Write Java programs to check your answers. Or you can ask a TA or instructor 
 to give feedback on your responses.
 
 = Practice questions
 
-1) Loop practice. Can you write loops in `main` which produce the following console output?
-
-* Write a loop that prints the following sequence to the console
-[source,java]
-----
-The next number is:  -5
-The next number is:  -4
-The next number is:  -3
-The next number is:  -2
-The next number is:  -1
-The next number is:  0
-The next number is:  1
-The next number is:  2
-The next number is:  3
-The next number is:  4
-The next number is:  5
-----
-
-* Write a loop that prints the following sequence to the console
-
-[source,java]
-----
-X =  10.0
-X =  20.0
-X =  30.0
-X =  40.0
-X =  50.0
-X =  60.0
-X =  70.0
-X =  80.0
-X =  90.0
-----
-
-* Write a program that outputs the following to the console
-
-[source,java]
-----
-10
-9
-8
-7
-6
-5
-4
-3
-2
-1
-Blast off!
-----
-
-* Write a program that outputs the following pattern to the console
-
-[source,java]
-----
-*
-**
-***
-****
-*****
-----
-
-* Write a program that outputs a 5x5 square of asterisk to the console
-
-[source,java]
-----
-*****
-*****
-*****
-*****
-*****
-----
-
-2) Loop practice. Use loops to compute quantities over random numbers.
+1) Loop practice. Use loops to compute quantities over random numbers.
 
 * Using a loop, compute the sum of 5 random numbers between -10 and 10. Output the results to the console. 
 Below is an example
@@ -174,34 +97,6 @@ Test your function with the following sequence of values using a loop: 1.0, 1.25
 // Output: values (array of float)
 ----
 
-4) Class practice.
-
-* Implement a Movie class. Movie should contain the following data and methods
-
-[source,java]
-----
-// Data
-
-// Title (string)
-// Duration in minutes (float)
-// Year (integer)
-// actors (array of String) 
-
-// Methods
-
-// Constructor 
-// Input: Title (string)
-// Input: Duration in minutes (float)
-// Input: Year (integer)
-// Input: actors (array of String) 
-
-// Accessor for title
-// Mutator for title 
-----
-
-* Test your Movie class. Create a Movie object for "The Shining" which was made in 1980, is 
-2 hours and 26 minutes long, and stars Jack Nicholson and Shelley Duval. Create your object in `setup()`
-
 6) A programmer has a bug in her code. She expected compute to return 4.0 but it's returning 3.0. What's wrong?
 
 [source,java]
@@ -249,7 +144,7 @@ class Mystery {
 ----
 
 * What is the output of this program?
-* What local variables are in scope in `setup()`? 
+* What local variables are in scope in `main()`? 
 * What local variables are in scope in `mystery()`? 
 * What is the return type of `mystery()`?
 
@@ -356,3 +251,139 @@ class Mystery {
 * What methods are defined in `Mystery`? 
 * Implement an accessor method for the attribute (e.g. member variable) `a` in `Mystery`. 
 
+
+11) Write a function that takes a String as an input and replaces all occurrences of the letter 
+`e` to `3` and all occurrences of the letter `s` to `5`. Test your function from `main` using the 
+phrases "elephant" and "sour patch kids".
+
+[source, java]
+----
+// Function: replaceChars
+// Input: initialString (String), the original string to modify
+// Output: (String), the modified String
+----
+
+12) Write a function that takes a String as an input and returns the reverse String.  
+
+13) What would the output of the following code be?
+
+[source,java]
+----
+for (int i = 0; i < 2; i++) 
+{
+    for (int j = 0; j < 3; j++)
+    { 
+        println("i:" + i + " j:" + j);
+    }
+}
+----
+
+14) Write code to load and parse a file with format [Name,Score,PowerUp,Role]
+[source,java]
+----
+Ressie Rask  ,3224,Mushroom,Healer
+Angelique Aust  ,1190,Mushroom,Dps
+Tiny Teamer  ,3722,Mushroom,Tank
+Michell Mancino  ,316,Tea kettle,Dps
+Amos Ackman  ,4989,Fireball,Tank
+Liz Labat  ,714,Mushroom,Healer
+Lawerence Lalonde  ,3921,Mushroom,Dps
+Madelyn Mcjunkin  ,1243,Fireball,Tank
+Echo Eckhardt  ,4831,Mushroom,Dps
+----
+
+15) True/False questions:
+
+- Linear search requires a number of steps proportional to the size of the list being searched (T/F)
+- Binary search is an O(N+++<sup>2</sup>+++) algorithm (T/F)
+- The number of times N can be divided by 2 (before reaching 1) is
+  log+++<sub>2</sub>+++ N (T/F)
+
+16) How many steps would it take to do binary search on a list of size 1
+million, when the item you are searching for is NOT in the list?
+
+17) How many steps would it take to do linear search on a list of size 1
+million, when the item you are searching for is NOT in the list?
+
+18) Binary search is much faster than linear search, so why don't we use it for every search problem?
+
+19) For each iteration of the loop in `binarySearch(int x, int[] L)`, show the
+*index* values for `low`, `high`, and `mid`, and the value stored at
+location `mid`.  What will be returned by this function call?
+
+----
+int x = 67;
+int[] L = {10, 12, 14, 21, 37, 44, 45, 46, 58, 67, 99};
+            0   1   2   3   4   5   6   7   8   9  10   
+
+low | high | mid | L[mid]
+- - - - - - - - - - - - -
+    |      |     |
+    |      |     |
+    |      |     |
+    |      |     |
+----
+
+20) For each iteration of the loop in `binarySearch(int y, int[] L)`, show the
+*index* values for low, high, and mid, and the value stored at
+location mid.  What will be returned by this function call?
+
+----
+int y = 4;
+int[] L = [10, 12, 14, 21, 37, 44, 45, 46, 58, 67, 99];
+            0   1   2   3   4   5   6   7   8   9  10   
+
+low | high | mid | L[mid]
+- - - - - - - - - - - - -
+    |      |     |
+    |      |     |
+    |      |     |
+    |      |     |
+----
+
+21) Write a function to return the *index* of the smallest item in a given list.
+
+[source,java]
+----
+// Input:  An array of integers
+// Returns: The index of the smallest item in the list, 
+//    -1 if the list is empty
+
+int indexOfSmallest(int[] ls) {
+   // complete this function
+}
+----
+
+
+22) Which algorithm requires time directly proportional to the size of the input list?
++
+    - linear search
+    - binary search
+    - bubble sort
+    - selection sort
++
+
+23) Consider the following function, `oneLoop(int[] L)`, which is similar to 
+the inner loop from bubble sort:
++
+[source,java]
+----
+void oneLoop(int[] L)
+{
+   for (int j = 0; j < L.length()-1; j++) 
+   {
+      if (L[j] > L[j+1])
+      {
+         int tmp = L[j+1];
+         L[j+1] = L[j];
+         L[j] = tmp;
+      }
+   }
+}
+----
++
+Suppose we run `oneLoop` on the list `L={17,4,19,3,11,8}`. What are
+the new contents of `L`?
+
+24) Show how the list `L={17,4,19,3,11,8}` would be changed 
+after selection sort does its first 3 swaps:

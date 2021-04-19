@@ -13,6 +13,7 @@ include::header.adoc[]
 == Announcements
 * Topic this week: link:#search[Search and sort]
 * link:asst07.html[Assignment 7] is due on April 23rd
+* link:jam4Guide.html[Jam 4 Guide]
 * Code presentations in labs 
 
 == **Schedule**
