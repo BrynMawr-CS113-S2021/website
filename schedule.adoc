@@ -123,11 +123,12 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-6
 * link:asst07.html[Assignment 7]: *Due April 23*
 * Presentations III: Arrays, strings, advanced IO
 * link:jam4Guide.html[Jam 4 Guide]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1f6c9610-67e9-4daa-9684-ad10013ab399[Lecture 4/20/2021]
 
 //-----------------------------
 |11
 |April 27,30
-|*Runtime analysis and recursion* anchor:analysis[]
+|*More search and sort; Runtime analysis* anchor:analysis[]
 
 * Read: Sedgewick and Wayne, Sec 2.3
 * link:asst08.html[Assignment 8]: *Due April 30*
@@ -137,7 +138,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-6
 //-----------------------------
 |12
 |May 4,7
-|*More recursion, intro to data structures* anchor:recursion[]
+|*Recursion* anchor:recursion[]
 
 * link:asst09.html[Assignment 9]: *Due May 11*
 * Presentations IV: More objects and algorithms
@@ -146,7 +147,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-6
 //-----------------------------
 |13
 |May 11
-|*ArrayList, HashMap and Dictionary* anchor:datastructures[]
+|*Final Thoughts. ArrayList, HashMap and Dictionary* anchor:datastructures[]
 
 * Read: Sedgewick and Wayne, Sec 4.4
 * link:jam5Guide.html[Final exam guide]
