@@ -1,6 +1,6 @@
 include::header.adoc[]
 
-:title: CS21 Lab 8: Memory Game 
+:title: CS113 Lab 8: Memory Game 
 :Author Initials: JMK
 :labnum: 08
 

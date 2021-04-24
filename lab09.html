@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="generator" content="Asciidoctor 2.0.10">
+<title>CS21 Lab 9: Sorting</title>
+<link rel="stylesheet" href="style/cs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body class="article toc2 toc-left">
+<div id="header">
+<div id="toc" class="toc2">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_cs21_lab_9_sorting">CS21 Lab 9: Sorting</a>
+<ul class="sectlevel2">
+<li><a href="#_goals">Goals</a></li>
+</ul>
+</li>
+<li><a href="#_restaurant_analysis">1. Restaurant analysis</a>
+<ul class="sectlevel2">
+<li><a href="#_getting_started">1.1. Getting started</a></li>
+<li><a href="#_feature_search_names_by_keyword">1.2. Feature: Search names by keyword</a></li>
+<li><a href="#_feature_plan_a_night_out">1.3. Feature: Plan a night out</a></li>
+<li><a href="#_extra_challenge_plan_a_night_out_by_name_and_category">1.4. Extra Challenge: Plan a night out by name and category</a></li>
+<li><a href="#_extra_challenge_optimized_selection_sort">1.5. Extra Challenge: Optimized selection sort</a></li>
+<li><a href="#_extra_challenge_search_categories_by_keyword">1.6. Extra Challenge: Search categories by keyword</a></li>
+</ul>
+</li>
+<li><a href="#_answer_the_questionnaire">2. Answer the Questionnaire</a></li>
+<li><a href="#_turning_in_your_labs">3. Turning in your labs&#8230;&#8203;.</a></li>
+</ul>
+</div>
+</div>
+<div id="content">
+<div class="sect1">
+<h2 id="_cs21_lab_9_sorting">CS21 Lab 9: Sorting</h2>
+<div class="sectionbody">
+<div class="ulist">
+<ul>
+<li>
+<p>Implementation: due Saturday, April 18th, before midnight</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_goals">Goals</h3>
+<div class="ulist">
+<ul>
+<li>
+<p>sorting algorithms</p>
+</li>
+<li>
+<p>top-down design</p>
+</li>
+<li>
+<p>reading files</p>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_restaurant_analysis">1. Restaurant analysis</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In restaurant_sort.py, you will write a program that works with the same
+dataset as last week, but allows users to filter restaurants by keywords and
+then sort the results by the number of reviews.</p>
+</div>
+<div class="paragraph">
+<p>We will work with the following properties of businesses from the yelp dataset.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table Restaurant</caption>
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3335%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Property</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Type</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>API method example</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Example data</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Name</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>str</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>name = business.getName()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>"#1 Hawaiian Barbecue"</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>City</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>str</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>city = business.getCity()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>"Las Vegas"</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>State</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>str</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>state = business.getState()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>"NV"</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Review count</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>int</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>count = business.getReviewCount()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>40</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Stars</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>float</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>stars = business.getStars()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>3.5</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Categories</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>list (of str)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p><code>categories = business.getCategories()</code></p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>"Restaurants", "Hawaiian", "Seafood", "Barbeque"</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Below are sample runthroughs of the program:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="yelp-keyword-name-search.txt" class="bare">yelp-keyword-name-search.txt</a></p>
+</li>
+<li>
+<p><a href="yelp-plan.txt" class="bare">yelp-plan.txt</a></p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="_getting_started">1.1. Getting started</h3>
+<div class="paragraph">
+<p>Sketch a program <code>restaurant_sort.py</code> that will implement your restaurant analysis.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Copy <code>menu.py</code> from assignment #4 an import it into your program</p>
+</li>
+<li>
+<p>Create a TDD for your program. Create placeholder functions for every feature</p>
+</li>
+<li>
+<p>Import the class <code>Restaurant</code> defined in <code>restaurant.py</code> into your program</p>
+</li>
+<li>
+<p>Re-use your function to read in <code>restaurants.json</code> into a list of <code>Restaurant</code> from assignment 8</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_feature_search_names_by_keyword">1.2. Feature: Search names by keyword</h3>
+<div class="paragraph">
+<p>Implement a feature that allows the user to search restaurant names which contain a
+keyword.</p>
+</div>
+<div class="paragraph">
+<p><a href="yelp-keyword-name-search.txt">Click here for examples of searching names.</a></p>
+</div>
+<div class="paragraph">
+<p>Features/Hints:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>The search should be case-insenstive (Hint: use <code>&lt;str&gt;.lower()</code>)</p>
+</li>
+<li>
+<p>The keyword can appear anywhere in the name (you may use the <code>in</code> operator)</p>
+</li>
+<li>
+<p>The results should be sorted by number of reviews</p>
+</li>
+<li>
+<p>At most 25 results should be displayed</p>
+</li>
+<li>
+<p>The program should show the name, location, review count, and stars for each restaurant</p>
+</li>
+<li>
+<p>You may not use Python&#8217;s built-in sorting algorithms!</p>
+</li>
+<li>
+<p>&#8230;&#8203;but you can implement any sorting algorithm you like best!</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_feature_plan_a_night_out">1.3. Feature: Plan a night out</h3>
+<div class="paragraph">
+<p>Implement a feature which allows the user to plan a night out.</p>
+</div>
+<div class="paragraph">
+<p><a href="yelp-plan.txt">Click here for examples of searching for restaurants by several criteria.</a></p>
+</div>
+<div class="paragraph">
+<p>Features/Hints:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Ask the user for the desired city and state</p>
+</li>
+<li>
+<p>Ask the user for the desired keyword for searching names</p>
+</li>
+<li>
+<p>List the results. Sort by the number of reviews</p>
+</li>
+<li>
+<p>Show at most 25 restaurants</p>
+</li>
+<li>
+<p>We recommend you first search by name and then filter the results by city/state.
+You can re-use your function which searches by name.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_extra_challenge_plan_a_night_out_by_name_and_category">1.4. Extra Challenge: Plan a night out by name and category</h3>
+<div class="paragraph">
+<p>Extend your planning feature to look for the keyword in both the restaurant&#8217;s
+name and categories.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_extra_challenge_optimized_selection_sort">1.5. Extra Challenge: Optimized selection sort</h3>
+<div class="paragraph">
+<p>Since we always limit the results to the top 25, rather than sorting the entire list
+of results, we really only need to know the top 25 of them. Try writing a
+version of selection sort that takes the results and a topN parameter and
+returns a sorted list containing just the topN.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_extra_challenge_search_categories_by_keyword">1.6. Extra Challenge: Search categories by keyword</h3>
+<div class="paragraph">
+<p>Implement a feature that allows the user to search restaurant categories for a
+keyword.</p>
+</div>
+<div class="paragraph">
+<p>This feature is similar to the previous one, except that categories
+are a list of strings that you will need to search. Try to structure your
+program so that you reuse as much code as possible between these two features.</p>
+</div>
+<div class="paragraph">
+<p><a href="yelp-keyword-category-search.txt">Click here for examples of searching categories.</a></p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_answer_the_questionnaire">2. Answer the Questionnaire</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Please edit
+the <code>Questions-09.txt</code> file in your <code>cs21/labs/09</code> directory
+and answer the questions in that file.</p>
+</div>
+<div class="paragraph">
+<p>Once you&#8217;re done with that, run <code>handin21</code> again.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_turning_in_your_labs">3. Turning in your labs&#8230;&#8203;.</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Unresolved directive in lab09.adoc - include::handin21.adoc[]</p>
+</div>
+</div>
+</div>
+</div>
+<div id="footer">
+<div id="footer-text">
+Last updated 2020-04-14 14:55:23 -0400
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,175 @@
+include::header.adoc[]
+
+:title: CS21 Lab 8: Searching
+:Author Initials: ASN
+:labnum: 08
+
+= {title}
+
+* Implementation is due Saturday, April 11th, before midnight
+
+== Goals
+
+* practice reading data from a file
+* use lists and classes to store data
+* understand linear and binary search
+
+== Restaurants dataset
+
+For this assignment, we will be working with a real life link:https://www.yelp.com/dataset[dataset] 
+from link:https://www.yelp.com[Yelp]. Yelp provides information and reviews for a wide 
+range of businesses. We will look at a subset containing only restaurants, bars, and cafes.
+
+You will implement a program, `restaurant_info.py`, which will allow the user
+search through this dataset and learn interesting information. We
+strongly recommend reading through the entire lab and creating a TDD before
+implementing your program.
+
+The dataset is available in a popular web format called 
+link:https://www.w3schools.com/whatis/whatis_json.asp[JSON]. 
+Each line of the file contains information for a single restaurant. 
+The restaurants are listed in the file in *alphabetical order by name*.
+
+[source]
+----
+/home/alinen/public/cs21/restaurants.json
+/home/alinen/public/cs21/restaurants-small.json
+----
+
+Below is an example line. 
+
+[source]
+----
+{"business_id": "42yLya7lhe7TQGz3KEdKAw", "name": "#1 Hawaiian Barbecue", "address": "5905 S Eastern Ave, Ste 105", "city": "Las Vegas", "state": "NV", "postal_code": "89119", "latitude": 36.0819201, "longitude": -115.1195258, "stars": 3.5, "review_count": 40, "is_open": 1, "attributes": {"RestaurantsAttire": "'casual'", "RestaurantsPriceRange2": "1", "RestaurantsTableService": "False", "BusinessParking": "{'garage': False, 'street': False, 'validated': False, 'lot': False, 'valet': False}", "NoiseLevel": "'average'", "Alcohol": "'none'", "HasTV": "False", "BusinessAcceptsCreditCards": "True", "BikeParking": "False", "Ambience": "{'touristy': False, 'hipster': False, 'romantic': False, 'divey': False, 'intimate': False, 'trendy': False, 'upscale': False, 'classy': False, 'casual': True}", "OutdoorSeating": "False", "RestaurantsReservations": "False", "GoodForMeal": "{'dessert': False, 'latenight': False, 'lunch': True, 'dinner': False, 'brunch': True, 'breakfast': False}", "GoodForKids": "True", "RestaurantsDelivery": "True", "RestaurantsGoodForGroups": "True", "RestaurantsTakeOut": "True", "WiFi": "u'no'"}, "categories": "Restaurants, Hawaiian, Seafood, Barbeque", "hours": {"Monday": "10:30-21:30", "Tuesday": "10:30-21:30", "Wednesday": "10:30-21:30", "Thursday": "10:30-21:30", "Friday": "10:30-22:0", "Saturday": "10:30-22:0", "Sunday": "10:30-21:30"}}
+----
+
+You are given a class `Restaurant`, defined in `restaurant.py`, which can parse the lines in this 
+file. Additionally, you can use this class to access the information with in each restaurant.
+The following table lists the information you can work with using the `Restaurant` class. link:restaurant-example.py.txt[Click here for sample code showing how to work with the restaurant class (including loading them from file)]
+
+.Table Restaurant
+[cols="1a,1a,2a,2a"]
+!===
+| Property | Type | API method example | Example value 
+| Name | str | `name = business.getName()` |"#1 Hawaiian Barbecue" 
+| City | str | `city = business.getCity()` |"Las Vegas" 
+| State | str | `state = business.getState()` | "NV" 
+| Review count | int | `count = business.getReviewCount()` | 40 
+| Stars | float | `stars = business.getStars()` | 3.5 
+| Categories | list (of str) | `categories = business.getCategories()` | "Restaurants", "Hawaiian", "Seafood", "Barbeque"
+!===
+
+:sectnums:
+= Restaurant info
+
+For this assignment, you will write an application `restaurant_info.py` that allows a user to search for 
+information inside the restaurant dataset. You may not use Python's built-in searching and 
+sorting functions for this assignment!
+
+Below are samples from running the application:
+
+* link:yelp-name-search.txt[]
+* link:yelp-city-search.txt[]
+
+== Getting started 
+
+Write a TDD which outlines the application's main loop. Create placeholders for the 
+functions that will implement the different features of this program.
+
+Re-use `menu.py` from assignment #4 to implement the menu in `main()`.
+
+Implement a function that loads the dataset. We have two versions of the 
+dataset you can use for development: 
+
+* `/home/alinen/public/cs21/restaurants-small.json`: small dataset containing 12 restaurants. 
+Use this first so you can check your answers!
+* `/home/alinen/public/cs21/restaurants.json`: large dataset containing over 25K restaurants
+
+To load the dataset, open one of the JSON files, create a `Restaurant` object
+and call `loadFromLine` to initialize the object. This function should return
+a list of restaurants to be used by the remainder of your program.
+
+== Feature: Search by name
+
+Implement a feature which allows the user to search by name. 
+
+link:yelp-name-search.txt[Click here to see examples of running this feature.]
+
+Features:
+
+* Ask the user for the name to search for
+* The search should be case *insensitive*. #Use `lower()` when comparing strings#.
+* Because the names are alphabetized, use binary search to find a name
+* If a restaurant is found, display all its information in a table. 
+Your output does not need to be identical, but it should be clean and easy to read. 
+* You are not allowed to use any of Python’s built-in search functions.
+
+== Feature: Restaurant statistics by city
+
+Implement a feature which summarizes the restaurants for a given city. 
+
+link:yelp-city-search.txt[Click here to see an example of running this feature.]
+
+Features:
+
+* Ask the user for a city and state to search
+* Prints the number of restaurants in that city
+* Prints the average number of reviews for a restaurant
+* Prints the max number of reviews for a restaurant
+* Prints the min number of reviews for a restaurant
+* Prints the average number of Stars 
+* Outputs the results in a table with aligned columns
+* You may not use Python's built-in min, max, or sum functions!
+
+NOTE: This dataset includes restaurants for Las Vegas, Phoenix, Mississauga,
+Toronto, Montreal, Calgary, Cleveland, Charlotte, Pittsburgh, Scottsdale.
+
+== Extra Challenge: Search by reviews
+
+Implement a feature which allows the user to search by reviews. 
+
+link:yelp-review-search.txt[Click here to see examples of running this feature.]
+
+Features:
+
+* Ask the user for the minimum number of reviews and minimum number of stars. You 
+can assume that the user enters a valid integer.
+* Display your restaurants in a table. Recall that you can use string formatting 
+to pad the columns (for example `"%10s"%(name)` will pad the name with 10 spaces). 
+* Display the number of restaurants which satisfy the criteria
+
+
+== Extra Challenge: Add your own search option!
+
+Add your own search option to the program! For example, the program below 
+searches for all names which contain a keyword.
+
+[source]
+----
+1. Restaurants
+2. Reviews
+3. Cities
+4. Quit
+5. Search Names
+
+your choice --> 5
+- - - - - - - - - - - - - - - - - - - - - - - - -
+Search for: dino
+
+ Dino's Family Restaurant    Charlotte   3.5
+      Dino's Little Italy    Las Vegas   2.0
+        Dino's Ristorante      Phoenix   4.5
+ Dino's Wood Burning Pizza     Toronto   4.0
+----
+
+= Answer the Questionnaire
+
+Please edit
+the `Questions-{labnum}.txt` file in your `cs21/labs/{labnum}` directory
+and answer the questions in that file.
+
+Once you're done with that, run `handin21` again.
+
+= Turning in your labs....
+
+include::handin21.adoc[]

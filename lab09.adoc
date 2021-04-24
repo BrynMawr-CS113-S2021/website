@@ -1,0 +1,119 @@
+include::header.adoc[]
+
+:title: CS21 Lab 9: Sorting
+:Author Initials: ASN
+:labnum: 09
+
+= {title}
+
+* Implementation: due Saturday, April 18th, before midnight
+
+== Goals
+
+* sorting algorithms
+* top-down design
+* reading files
+
+
+:sectnums:
+
+= Restaurant analysis
+
+In restaurant_sort.py, you will write a program that works with the same
+dataset as last week, but allows users to filter restaurants by keywords and
+then sort the results by the number of reviews.
+
+We will work with the following properties of businesses from the yelp dataset.
+
+.Table Restaurant
+[cols="1a,1a,2a,2a"]
+!===
+| Property | Type | API method example | Example data 
+| Name | str | `name = business.getName()` |"#1 Hawaiian Barbecue" 
+| City | str | `city = business.getCity()` |"Las Vegas" 
+| State | str | `state = business.getState()` | "NV" 
+| Review count | int | `count = business.getReviewCount()` | 40 
+| Stars | float | `stars = business.getStars()` | 3.5 
+| Categories | list (of str) | `categories = business.getCategories()` | "Restaurants", "Hawaiian", "Seafood", "Barbeque"
+!===
+
+Below are sample runthroughs of the program:
+
+* link:yelp-keyword-name-search.txt[]
+* link:yelp-plan.txt[]
+
+== Getting started
+
+Sketch a program `restaurant_sort.py` that will implement your restaurant analysis.
+
+* Copy `menu.py` from assignment #4 an import it into your program
+* Create a TDD for your program. Create placeholder functions for every feature
+* Import the class `Restaurant` defined in `restaurant.py` into your program
+* Re-use your function to read in `restaurants.json` into a list of `Restaurant` from assignment 8
+
+== Feature: Search names by keyword
+
+Implement a feature that allows the user to search restaurant names which contain a 
+keyword. 
+
+link:yelp-keyword-name-search.txt[Click here for examples of searching names.]
+
+Features/Hints:
+
+* The search should be case-insenstive (Hint: use `<str>.lower()`)
+* The keyword can appear anywhere in the name (you may use the `in` operator)
+* The results should be sorted by number of reviews
+* At most 25 results should be displayed
+* The program should show the name, location, review count, and stars for each restaurant 
+* You may not use Python's built-in sorting algorithms!
+* ...but you can implement any sorting algorithm you like best!
+
+== Feature: Plan a night out
+
+Implement a feature which allows the user to plan a night out. 
+
+link:yelp-plan.txt[Click here for examples of searching for restaurants by several criteria.]
+
+Features/Hints:
+
+* Ask the user for the desired city and state
+* Ask the user for the desired keyword for searching names
+* List the results. Sort by the number of reviews
+* Show at most 25 restaurants
+* We recommend you first search by name and then filter the results by city/state.
+You can re-use your function which searches by name.
+
+== Extra Challenge: Plan a night out by name and category
+
+Extend your planning feature to look for the keyword in both the restaurant's 
+name and categories. 
+
+== Extra Challenge: Optimized selection sort
+
+Since we always limit the results to the top 25, rather than sorting the entire list
+of results, we really only need to know the top 25 of them. Try writing a 
+version of selection sort that takes the results and a topN parameter and
+returns a sorted list containing just the topN. 
+
+== Extra Challenge: Search categories by keyword
+
+Implement a feature that allows the user to search restaurant categories for a 
+keyword. 
+
+This feature is similar to the previous one, except that categories 
+are a list of strings that you will need to search. Try to structure your 
+program so that you reuse as much code as possible between these two features.
+
+link:yelp-keyword-category-search.txt[Click here for examples of searching categories.]
+
+= Answer the Questionnaire
+
+Please edit
+the `Questions-{labnum}.txt` file in your `cs21/labs/{labnum}` directory
+and answer the questions in that file.
+
+Once you're done with that, run `handin21` again.
+
+= Turning in your labs....
+
+include::handin21.adoc[]
