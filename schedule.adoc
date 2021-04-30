@@ -135,7 +135,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4e3d5629-6
 * link:asst08.html[Assignment 8]: *Due April 30*
 * Code Jam IV: More objects and algorithms
 * link:jam4Guide.html[Jam 4 Guide]
-* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e041b3fb-3668-46a9-a6c1-ad17014a4170[Lecture 4/27/2021]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e041b3fb-3668-46a9-a6c1-ad17014a4170[Lecture 4/27/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e55ff32-225a-4cb8-9e9b-ad1a01311911[Lecture 4/30/2021]
 
 //-----------------------------
 |12
