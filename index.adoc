@@ -12,7 +12,6 @@ include::header.adoc[]
 [.anns]
 == Announcements
 * Topic this week: link:#recursion[Recursion]
-* link:asst08.html[Assignment 8] is due on April 30th
 * link:asst09.html[Assignment 9] is due on May 7th
 * Code jam presentations in lab. 
 
