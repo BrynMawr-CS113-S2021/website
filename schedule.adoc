@@ -146,7 +146,8 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e55ff32-2
 * link:asst09.html[Assignment 9]: *Due May 11*
 * Presentations IV: More objects and algorithms
 * link:jam5Guide.html[Final exam guide]
-* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a19f42b6-43fc-4f42-87d0-ad1e0132cf9c[Lecture 5/4/2021]
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a19f42b6-43fc-4f42-87d0-ad1e0132cf9c[Lecture 5/4/2021],
+link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=543f8784-25a5-45b8-88c3-ad210121d9c3[Lecture 5/7/2021]
 
 //-----------------------------
 |13

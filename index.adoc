@@ -11,9 +11,8 @@ include::header.adoc[]
 
 [.anns]
 == Announcements
-* Topic this week: link:#recursion[Recursion]
+* Topic this week: link:#datastructures[ArrayList, Dictionary]
 * link:asst09.html[Assignment 9] is due on May 7th
-* Code jam presentations in lab. 
 
 == **Schedule**
 
