@@ -155,6 +155,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=543f8784-2
 |*Final Thoughts. ArrayList, HashMap and Dictionary* anchor:datastructures[]
 
 * Read: Sedgewick and Wayne, Sec 4.4
+* link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=35663e68-c1d1-4e19-8e53-ad25011f5051[Lecture 5/11/2021]
 * link:jam5Guide.html[Final exam guide]
 
 |===
