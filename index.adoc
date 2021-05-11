@@ -11,8 +11,7 @@ include::header.adoc[]
 
 [.anns]
 == Announcements
-* Topic this week: link:#datastructures[ArrayList, Dictionary]
-* link:asst09.html[Assignment 9] is due on May 7th
+* Final Exam: May 18th, 9:30am-12:30pm EST
 
 == **Schedule**
 
