@@ -9,16 +9,9 @@ include::header.adoc[]
 
 = {course}: {title} -- {term}
 
-[.anns]
-== Announcements
-* Final Exam: May 18th, 9:30am-12:30pm EST
-
-== **Schedule**
-
-The syllabus may change during the semester. Please check here every week for updates 
-on lecture content, worksheets, and assignments.
-
-include::schedule.adoc[]
+//[.anns]
+//== Announcements
+//* Final Exam: May 18th, 9:30am-12:30pm EST
 
 == Course Info
 
@@ -84,6 +77,13 @@ All TA office hours will be on Zoom. See our course slack for details!
 
 * link:develEnvSetup.html[Instructions for setting up Java]
 * link:https://github.com/BrynMawr-CS113-S2021/code-examples[JAVA programs from lecture]
+
+== **Schedule**
+
+The syllabus may change during the semester. Please check here every week for updates 
+on lecture content, worksheets, and assignments.
+
+include::schedule.adoc[]
 
 == Grading Policies
 

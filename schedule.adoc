@@ -23,7 +23,7 @@
 
 * Terminal, directories/files, Input and output, Basic data types (int,double,String), Variables 
 * Read: Sedgewick and Wayne, Sec 1.2 (Skip `boolean`)
-* link:asst00.html[Assignment 0]: *Due Feb 19*
+* link:asst00.html[Assignment 00: Hello, CS113!]: *Due Feb 19*
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=b17cbd4b-26bf-4d87-9de5-acd10143f4bc[Lecture 2/16/2021]
 ,link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d3ec6f99-b3dd-4062-8c5f-acd4013d5c4f[Lecture 2/19/2021]
 
@@ -33,11 +33,11 @@
 |*Conditionals* anchor:if[]
 
 * Read: Sedgewick and Wayne, Sec 1.2 (`boolean`), Sec 1.3 (`if/else`)
-* link:asst01.html[Assignment 1]: *Due Feb 26*
+* link:asst01.html[Assignment 01: First Programs]: *Due Feb 26*
 * Lab: Course check-ins
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6b321db9-ca0d-4c57-a77c-acd8013caa1c[Lecture 2/23/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=152e8cf5-c9cd-41d5-aa9b-acdb013aa554[Lecture 2/26/2021]
-* link:jam1Guide.html[Jam 1 Study Guide]
+* link:jam1Guide.html[Jam 1 Study Guide: Variables and data types]
 
 //-----------------------------
 |3
@@ -45,7 +45,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=152e8cf5-c
 |*Loops* anchor:loop[]
 
 * Read: Sedgewick and Wayne, Sec 1.3 (`while` and `for` loops)
-* link:asst02.html[Assignment 2]: *Due March 5*
+* link:asst02.html[Assignment 02: Conditional love]: *Due March 5*
 * Code Jam I: Variables and data types
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a4080d12-5690-4448-83f9-acdf0144932d[Lecture 3/2/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=081be417-83dd-4f5f-8c05-ace300eab731[Lecture 3/6/2021]
@@ -56,7 +56,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=081be417-8
 |*Arrays, Strings, File I/O* anchor:arrays[]
 
 * Read: Sedgewick and Wayne, Sec 1.4, 1.5, (Strings) 3.1
-* link:asst03.html[Assignment 3]: *Due March 12*
+* link:asst03.html[Assignment 03: Loops, I did it again]: *Due March 12*
 * Presentations I: Variables and data types
 * link:jam2Guide.html[Jam 2 Study Guide]
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6d7c4842-1ba4-4447-af63-ace601383027[Lecture 3/9/2021],
@@ -68,7 +68,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=f81162a5-f
 |*Functions* anchor:functions1[]
 
 * Read: Sedgewick and Wayne, Sec 2.1
-* link:asst04.html[Assignment 4]: *Due March 19*
+* link:asst04.html[Assignment 04: Get carried array]: *Due March 19*
 * Code Jam II: Conditionals and loops
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=5655a3e6-32d9-4ffc-810a-aced012e25a7[Lecture 3/16/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c922f43-98b6-4e58-ad87-acf10122ea8d[Lecture 3/20/2021]
@@ -79,7 +79,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=3c922f43-9
 |*Functions* anchor:functions2[]
 
 * Read: Sedgewick and Wayne, Sec 2.1
-* link:asst05.html[Assignment 5]: *Due March 26*
+* link:asst05.html[Assignment 05: Can't spell functions without fun]: *Due March 26*
 * Presentations II: Conditionals and loops
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0f85c2c2-2013-405b-b7fd-acf4013f4a21[Lecture 3/23/2021],
 link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6fba-445f-adf6-acf7012f73bf[Lecture 3/26/2021]
@@ -108,7 +108,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=6676ded0-6
 |*Objects oriented programming: creating objects* anchor:objects2[]
 
 * Read: Sedgewick and Wayne, Sec 3.1, 3.2
-* link:asst06.html[Assignment 6]: *Due April 16*
+* link:asst06.html[Assignment 06: Be classy]: *Due April 16*
 * link:jam3Guide.html[Jam 3 Guide]
 * Code Jam III: Arrays, strings, functions, simple classes and objects
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=d263dd06-8afe-4a55-8a89-ad09014f4061[Lecture 4/13/2021],
@@ -120,7 +120,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e539d08e-6
 |*Search and sort* anchor:search[]
 
 * Read: Sedgewick and Wayne, Sec 4.2
-* link:asst07.html[Assignment 7]: *Due April 23*
+* link:asst07.html[Assignment 07: Memory game]: *Due April 23*
 * Presentations III: Arrays, strings, advanced IO
 * link:jam4Guide.html[Jam 4 Guide]
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=1f6c9610-67e9-4daa-9684-ad10013ab399[Lecture 4/20/2021],
@@ -132,7 +132,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=4e3d5629-6
 |*More search and sort; Runtime analysis* anchor:analysis[]
 
 * Read: Sedgewick and Wayne, Sec 2.3
-* link:asst08.html[Assignment 8]: *Due April 30*
+* link:asst08.html[Assignment 08: Search and sort restaurants]: *Due April 30*
 * Code Jam IV: More objects and algorithms
 * link:jam4Guide.html[Jam 4 Guide]
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=e041b3fb-3668-46a9-a6c1-ad17014a4170[Lecture 4/27/2021],
@@ -143,7 +143,7 @@ link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8e55ff32-2
 |May 4,7
 |*Recursion* anchor:recursion[]
 
-* link:asst09.html[Assignment 9]: *Due May 11*
+* link:asst09.html[Assignment 09: Recursion excursion]: *Due May 11*
 * Presentations IV: More objects and algorithms
 * link:jam5Guide.html[Final exam guide]
 * link:https://brynmawr.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=a19f42b6-43fc-4f42-87d0-ad1e0132cf9c[Lecture 5/4/2021],
